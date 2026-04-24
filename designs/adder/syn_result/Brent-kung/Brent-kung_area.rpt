@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : brent_kung_32
+Version: O-2018.06-SP5
+Date   : Fri Apr 24 19:57:22 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed14rvt_base_ss0p72v125c (File: /home/abdelazeem/Desktop/CIM_GP/libs/saed14rvt_base_ss0p72v125c.db)
+
+Number of ports:                          103
+Number of nets:                           449
+Number of cells:                          381
+Number of combinational cells:            346
+Number of sequential cells:                35
+Number of macros/black boxes:               0
+Number of buf/inv:                         80
+Number of references:                      35
+
+Combinational area:                110.733602
+Buf/Inv area:                       16.072800
+Noncombinational area:              37.296001
+Macro/Black Box area:                0.000000
+Net Interconnect area:             181.627799
+
+Total cell area:                   148.029603
+Total area:                        329.657402
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+brent_kung_32                      148.0296    100.0  110.7336    37.2960  0.0000  brent_kung_32
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 110.7336    37.2960  0.0000
+
+1

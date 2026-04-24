@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : clocks
+Design : brent_kung_32
+Version: O-2018.06-SP5
+Date   : Fri Apr 24 19:57:37 2026
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk             10.00   {0 5}               f         {clk}
+--------------------------------------------------------------------------------
+1
