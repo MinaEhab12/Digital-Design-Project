@@ -1,0 +1,449 @@
+Loading db file '/home/abdelazeem/Desktop/CIM_GP/libs/saed14rvt_base_ss0p72v125c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : Kogge_Stone_32Bits
+Version: O-2018.06-SP5
+Date   : Fri Apr 24 20:04:41 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed14rvt_base_ss0p72v125c (File: /home/abdelazeem/Desktop/CIM_GP/libs/saed14rvt_base_ss0p72v125c.db)
+
+
+Operating Conditions: ss0p72v125c   Library: saed14rvt_base_ss0p72v125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Kogge_Stone_32Bits     8000              saed14rvt_base_ss0p72v125c
+
+
+Global Operating Voltage = 0.72 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+Kogge_Stone_32Bits                     2.12e-02 9.28e-03 4.63e+05 3.09e-02 100.0
+  genblk8[31].sum_comp (post_process_1)
+                                       9.41e-05 1.93e-05 1.29e+03 1.15e-04   0.4
+  genblk8[30].sum_comp (post_process_2)
+                                       4.14e-05 1.97e-05 1.29e+03 6.24e-05   0.2
+  genblk8[29].sum_comp (post_process_3)
+                                       4.18e-05 1.98e-05 1.29e+03 6.29e-05   0.2
+  genblk8[28].sum_comp (post_process_4)
+                                       4.10e-05 1.95e-05 1.29e+03 6.18e-05   0.2
+  genblk8[27].sum_comp (post_process_5)
+                                       4.13e-05 1.96e-05 1.29e+03 6.22e-05   0.2
+  genblk8[26].sum_comp (post_process_6)
+                                       4.10e-05 1.94e-05 1.29e+03 6.17e-05   0.2
+  genblk8[25].sum_comp (post_process_7)
+                                       4.13e-05 1.96e-05 1.29e+03 6.22e-05   0.2
+  genblk8[24].sum_comp (post_process_8)
+                                       4.10e-05 1.94e-05 1.29e+03 6.17e-05   0.2
+  genblk8[23].sum_comp (post_process_9)
+                                       4.18e-05 1.97e-05 1.29e+03 6.28e-05   0.2
+  genblk8[22].sum_comp (post_process_10)
+                                       4.10e-05 1.94e-05 1.30e+03 6.17e-05   0.2
+  genblk8[21].sum_comp (post_process_11)
+                                       4.14e-05 1.96e-05 1.29e+03 6.23e-05   0.2
+  genblk8[20].sum_comp (post_process_12)
+                                       4.18e-05 1.98e-05 1.29e+03 6.29e-05   0.2
+  genblk8[19].sum_comp (post_process_13)
+                                       4.14e-05 1.96e-05 1.29e+03 6.22e-05   0.2
+  genblk8[18].sum_comp (post_process_14)
+                                       4.16e-05 1.97e-05 1.29e+03 6.26e-05   0.2
+  genblk8[17].sum_comp (post_process_15)
+                                       4.08e-05 1.93e-05 1.29e+03 6.14e-05   0.2
+  genblk8[16].sum_comp (post_process_16)
+                                       4.12e-05 1.95e-05 1.29e+03 6.20e-05   0.2
+  genblk8[15].sum_comp (post_process_17)
+                                       4.05e-05 1.92e-05 1.29e+03 6.10e-05   0.2
+  genblk8[14].sum_comp (post_process_18)
+                                       4.07e-05 1.93e-05 1.29e+03 6.13e-05   0.2
+  genblk8[13].sum_comp (post_process_19)
+                                       4.09e-05 1.94e-05 1.29e+03 6.16e-05   0.2
+  genblk8[12].sum_comp (post_process_20)
+                                       4.14e-05 1.96e-05 1.29e+03 6.22e-05   0.2
+  genblk8[11].sum_comp (post_process_21)
+                                       4.07e-05 1.92e-05 1.29e+03 6.12e-05   0.2
+  genblk8[10].sum_comp (post_process_22)
+                                       4.05e-05 1.92e-05 1.29e+03 6.10e-05   0.2
+  genblk8[9].sum_comp (post_process_23)
+                                       4.09e-05 1.93e-05 1.29e+03 6.15e-05   0.2
+  genblk8[8].sum_comp (post_process_24)
+                                       4.10e-05 1.94e-05 1.29e+03 6.17e-05   0.2
+  genblk8[7].sum_comp (post_process_25)
+                                       4.07e-05 1.95e-05 1.29e+03 6.15e-05   0.2
+  genblk8[6].sum_comp (post_process_26)
+                                       4.10e-05 1.96e-05 1.29e+03 6.20e-05   0.2
+  genblk8[5].sum_comp (post_process_27)
+                                       4.09e-05 1.96e-05 1.29e+03 6.17e-05   0.2
+  genblk8[4].sum_comp (post_process_28)
+                                       4.03e-05 1.93e-05 1.29e+03 6.08e-05   0.2
+  genblk8[3].sum_comp (post_process_29)
+                                       4.02e-05 1.95e-05 1.29e+03 6.10e-05   0.2
+  genblk8[2].sum_comp (post_process_30)
+                                       3.95e-05 1.92e-05 1.29e+03 6.00e-05   0.2
+  genblk8[1].sum_comp (post_process_31)
+                                       3.78e-05 1.88e-05 1.29e+03 5.79e-05   0.2
+  genblk8[0].sum_comp (post_process_0) 3.32e-05 1.68e-05 1.29e+03 5.13e-05   0.2
+  genblk7[32].genblk1.carry_calc5 (calc_carry_1)
+                                       2.24e-05 6.54e-06  933.198 2.99e-05   0.1
+  genblk7[31].genblk1.carry_calc5 (calc_carry_2)
+                                       5.03e-05 6.69e-06  933.302 5.79e-05   0.2
+  genblk7[30].genblk1.carry_calc5 (calc_carry_3)
+                                       5.03e-05 6.68e-06  931.990 5.79e-05   0.2
+  genblk7[29].genblk1.carry_calc5 (calc_carry_4)
+                                       4.98e-05 6.62e-06  932.679 5.74e-05   0.2
+  genblk7[28].genblk1.carry_calc5 (calc_carry_5)
+                                       5.00e-05 6.65e-06  932.577 5.76e-05   0.2
+  genblk7[27].genblk1.carry_calc5 (calc_carry_6)
+                                       4.97e-05 6.60e-06  931.195 5.72e-05   0.2
+  genblk7[26].genblk1.carry_calc5 (calc_carry_7)
+                                       4.93e-05 6.56e-06  934.342 5.68e-05   0.2
+  genblk7[25].genblk1.carry_calc5 (calc_carry_8)
+                                       4.96e-05 6.59e-06  932.771 5.71e-05   0.2
+  genblk7[24].genblk1.carry_calc5 (calc_carry_9)
+                                       4.97e-05 6.61e-06  931.942 5.72e-05   0.2
+  genblk7[23].genblk1.carry_calc5 (calc_carry_10)
+                                       5.03e-05 6.69e-06  933.596 5.79e-05   0.2
+  genblk7[22].genblk1.carry_calc5 (calc_carry_11)
+                                       5.01e-05 6.66e-06  933.605 5.77e-05   0.2
+  genblk7[21].genblk1.carry_calc5 (calc_carry_12)
+                                       5.10e-05 6.78e-06  934.259 5.87e-05   0.2
+  genblk7[20].genblk1.carry_calc5 (calc_carry_13)
+                                       4.99e-05 6.64e-06  932.837 5.75e-05   0.2
+  genblk7[19].genblk1.carry_calc5 (calc_carry_14)
+                                       4.92e-05 6.54e-06  932.461 5.66e-05   0.2
+  genblk7[18].genblk1.carry_calc5 (calc_carry_15)
+                                       4.93e-05 6.55e-06  932.928 5.68e-05   0.2
+  genblk7[17].genblk1.carry_calc5 (calc_carry_16)
+                                       4.85e-05 6.44e-06  933.642 5.58e-05   0.2
+  genblk7[16].genblk1.carry_calc4 (calc_carry_17)
+                                       4.94e-05 6.58e-06  932.874 5.69e-05   0.2
+  genblk7[15].genblk1.carry_calc4 (calc_carry_18)
+                                       4.75e-05 6.33e-06  932.686 5.48e-05   0.2
+  genblk7[14].genblk1.carry_calc4 (calc_carry_19)
+                                       4.89e-05 6.52e-06  933.629 5.64e-05   0.2
+  genblk7[13].genblk1.carry_calc4 (calc_carry_20)
+                                       4.94e-05 6.58e-06  932.640 5.69e-05   0.2
+  genblk7[12].genblk1.carry_calc4 (calc_carry_21)
+                                       4.89e-05 6.52e-06  931.943 5.63e-05   0.2
+  genblk7[11].genblk1.carry_calc4 (calc_carry_22)
+                                       4.82e-05 6.44e-06  934.577 5.56e-05   0.2
+  genblk7[10].genblk1.carry_calc4 (calc_carry_23)
+                                       4.84e-05 6.46e-06  932.363 5.58e-05   0.2
+  genblk7[9].genblk1.carry_calc4 (calc_carry_24)
+                                       4.91e-05 6.55e-06  933.723 5.66e-05   0.2
+  genblk7[8].genblk1.carry_calc3 (calc_carry_25)
+                                       4.82e-05 6.44e-06  934.707 5.55e-05   0.2
+  genblk7[7].genblk1.carry_calc3 (calc_carry_26)
+                                       4.86e-05 6.53e-06  933.110 5.61e-05   0.2
+  genblk7[6].genblk1.carry_calc3 (calc_carry_27)
+                                       4.98e-05 6.79e-06  934.026 5.75e-05   0.2
+  genblk7[5].genblk1.carry_calc3 (calc_carry_28)
+                                       4.76e-05 6.49e-06  934.491 5.50e-05   0.2
+  genblk7[4].genblk1.carry_calc2 (calc_carry_29)
+                                       4.76e-05 6.62e-06  936.695 5.52e-05   0.2
+  genblk7[3].genblk1.carry_calc2 (calc_carry_30)
+                                       4.68e-05 6.68e-06  941.628 5.44e-05   0.2
+  genblk7[2].genblk1.carry_calc1 (calc_carry_31)
+                                       4.44e-05 6.61e-06  951.150 5.19e-05   0.2
+  genblk7[1].genblk1.carry_calc0 (calc_carry_0)
+                                       3.94e-05 6.81e-06  983.146 4.72e-05   0.2
+  genblk6[15].genblk1.stage5 (dot_operator_1)
+                                       2.27e-05 7.04e-06 1.46e+03 3.12e-05   0.1
+  genblk6[14].genblk1.stage5 (dot_operator_2)
+                                       2.29e-05 7.09e-06 1.46e+03 3.15e-05   0.1
+  genblk6[13].genblk1.stage5 (dot_operator_3)
+                                       2.29e-05 7.08e-06 1.46e+03 3.15e-05   0.1
+  genblk6[12].genblk1.stage5 (dot_operator_4)
+                                       2.27e-05 7.03e-06 1.46e+03 3.12e-05   0.1
+  genblk6[11].genblk1.stage5 (dot_operator_5)
+                                       2.28e-05 7.06e-06 1.46e+03 3.13e-05   0.1
+  genblk6[10].genblk1.stage5 (dot_operator_6)
+                                       2.26e-05 7.00e-06 1.46e+03 3.11e-05   0.1
+  genblk6[9].genblk1.stage5 (dot_operator_7)
+                                       2.25e-05 6.96e-06 1.46e+03 3.09e-05   0.1
+  genblk6[8].genblk1.stage5 (dot_operator_8)
+                                       2.26e-05 6.99e-06 1.46e+03 3.11e-05   0.1
+  genblk6[7].genblk1.stage5 (dot_operator_9)
+                                       2.27e-05 6.78e-06 1.55e+03 3.10e-05   0.1
+  genblk6[6].genblk1.stage5 (dot_operator_10)
+                                       2.29e-05 6.87e-06 1.55e+03 3.13e-05   0.1
+  genblk6[5].genblk1.stage5 (dot_operator_11)
+                                       2.28e-05 6.84e-06 1.55e+03 3.12e-05   0.1
+  genblk6[4].genblk1.stage5 (dot_operator_12)
+                                       2.33e-05 6.96e-06 1.55e+03 3.18e-05   0.1
+  genblk6[3].genblk1.stage5 (dot_operator_13)
+                                       2.28e-05 6.81e-06 1.55e+03 3.11e-05   0.1
+  genblk6[2].genblk1.stage5 (dot_operator_14)
+                                       2.24e-05 6.71e-06 1.55e+03 3.07e-05   0.1
+  genblk6[1].genblk1.stage5 (dot_operator_15)
+                                       2.25e-05 6.74e-06 1.55e+03 3.08e-05   0.1
+  genblk6[0].genblk1.stage5 (dot_operator_16)
+                                       2.21e-05 6.62e-06 1.55e+03 3.03e-05   0.1
+  genblk5[23].genblk1.stage4 (dot_operator_17)
+                                       2.28e-05 7.08e-06 1.46e+03 3.13e-05   0.1
+  genblk5[22].genblk1.stage4 (dot_operator_18)
+                                       2.29e-05 7.12e-06 1.46e+03 3.15e-05   0.1
+  genblk5[21].genblk1.stage4 (dot_operator_19)
+                                       2.29e-05 7.12e-06 1.46e+03 3.15e-05   0.1
+  genblk5[20].genblk1.stage4 (dot_operator_20)
+                                       2.27e-05 7.07e-06 1.46e+03 3.12e-05   0.1
+  genblk5[19].genblk1.stage4 (dot_operator_21)
+                                       2.28e-05 7.10e-06 1.46e+03 3.14e-05   0.1
+  genblk5[18].genblk1.stage4 (dot_operator_22)
+                                       2.27e-05 7.05e-06 1.46e+03 3.12e-05   0.1
+  genblk5[17].genblk1.stage4 (dot_operator_23)
+                                       2.25e-05 7.00e-06 1.47e+03 3.10e-05   0.1
+  genblk5[16].genblk1.stage4 (dot_operator_24)
+                                       2.26e-05 7.03e-06 1.46e+03 3.11e-05   0.1
+  genblk5[15].genblk1.stage4 (dot_operator_25)
+                                       2.27e-05 7.10e-06 1.47e+03 3.12e-05   0.1
+  genblk5[14].genblk1.stage4 (dot_operator_26)
+                                       2.29e-05 7.18e-06 1.47e+03 3.16e-05   0.1
+  genblk5[13].genblk1.stage4 (dot_operator_27)
+                                       2.29e-05 7.15e-06 1.47e+03 3.15e-05   0.1
+  genblk5[12].genblk1.stage4 (dot_operator_28)
+                                       2.33e-05 7.28e-06 1.47e+03 3.20e-05   0.1
+  genblk5[11].genblk1.stage4 (dot_operator_29)
+                                       2.28e-05 7.12e-06 1.46e+03 3.14e-05   0.1
+  genblk5[10].genblk1.stage4 (dot_operator_30)
+                                       2.24e-05 7.00e-06 1.46e+03 3.09e-05   0.1
+  genblk5[9].genblk1.stage4 (dot_operator_31)
+                                       2.25e-05 7.03e-06 1.47e+03 3.10e-05   0.1
+  genblk5[8].genblk1.stage4 (dot_operator_32)
+                                       2.21e-05 6.92e-06 1.46e+03 3.05e-05   0.1
+  genblk5[7].genblk1.stage4 (dot_operator_33)
+                                       5.02e-05 7.06e-06 1.46e+03 5.88e-05   0.2
+  genblk5[6].genblk1.stage4 (dot_operator_34)
+                                       4.84e-05 6.81e-06 1.47e+03 5.67e-05   0.2
+  genblk5[5].genblk1.stage4 (dot_operator_35)
+                                       4.99e-05 7.02e-06 1.47e+03 5.84e-05   0.2
+  genblk5[4].genblk1.stage4 (dot_operator_36)
+                                       5.04e-05 7.07e-06 1.47e+03 5.89e-05   0.2
+  genblk5[3].genblk1.stage4 (dot_operator_37)
+                                       5.10e-05 6.93e-06 1.55e+03 5.94e-05   0.2
+  genblk5[2].genblk1.stage4 (dot_operator_38)
+                                       5.03e-05 6.84e-06 1.55e+03 5.87e-05   0.2
+  genblk5[1].genblk1.stage4 (dot_operator_39)
+                                       5.03e-05 6.85e-06 1.55e+03 5.87e-05   0.2
+  genblk5[0].genblk1.stage4 (dot_operator_40)
+                                       5.12e-05 6.97e-06 1.55e+03 5.97e-05   0.2
+  genblk4[27].genblk1.stage3 (dot_operator_41)
+                                       2.55e-05 7.73e-06 1.49e+03 3.47e-05   0.1
+  genblk4[26].genblk1.stage3 (dot_operator_42)
+                                       2.53e-05 7.76e-06 1.49e+03 3.46e-05   0.1
+  genblk4[25].genblk1.stage3 (dot_operator_43)
+                                       2.54e-05 7.71e-06 1.49e+03 3.46e-05   0.1
+  genblk4[24].genblk1.stage3 (dot_operator_44)
+                                       2.53e-05 7.66e-06 1.49e+03 3.44e-05   0.1
+  genblk4[23].genblk1.stage3 (dot_operator_45)
+                                       2.54e-05 7.72e-06 1.49e+03 3.46e-05   0.1
+  genblk4[22].genblk1.stage3 (dot_operator_46)
+                                       2.53e-05 7.67e-06 1.49e+03 3.44e-05   0.1
+  genblk4[21].genblk1.stage3 (dot_operator_47)
+                                       2.50e-05 7.64e-06 1.49e+03 3.42e-05   0.1
+  genblk4[20].genblk1.stage3 (dot_operator_48)
+                                       2.51e-05 7.68e-06 1.49e+03 3.43e-05   0.1
+  genblk4[19].genblk1.stage3 (dot_operator_49)
+                                       5.43e-05 7.69e-06 1.49e+03 6.35e-05   0.2
+  genblk4[18].genblk1.stage3 (dot_operator_50)
+                                       5.51e-05 7.80e-06 1.49e+03 6.43e-05   0.2
+  genblk4[17].genblk1.stage3 (dot_operator_51)
+                                       5.48e-05 7.75e-06 1.49e+03 6.40e-05   0.2
+  genblk4[16].genblk1.stage3 (dot_operator_52)
+                                       5.62e-05 7.91e-06 1.49e+03 6.56e-05   0.2
+  genblk4[15].genblk1.stage3 (dot_operator_53)
+                                       5.48e-05 7.73e-06 1.49e+03 6.40e-05   0.2
+  genblk4[14].genblk1.stage3 (dot_operator_54)
+                                       5.32e-05 7.54e-06 1.49e+03 6.22e-05   0.2
+  genblk4[13].genblk1.stage3 (dot_operator_55)
+                                       5.38e-05 7.61e-06 1.49e+03 6.29e-05   0.2
+  genblk4[12].genblk1.stage3 (dot_operator_56)
+                                       5.32e-05 7.52e-06 1.49e+03 6.22e-05   0.2
+  genblk4[11].genblk1.stage3 (dot_operator_57)
+                                       5.40e-05 7.62e-06 1.49e+03 6.31e-05   0.2
+  genblk4[10].genblk1.stage3 (dot_operator_58)
+                                       5.20e-05 7.33e-06 1.49e+03 6.08e-05   0.2
+  genblk4[9].genblk1.stage3 (dot_operator_59)
+                                       5.38e-05 7.58e-06 1.49e+03 6.29e-05   0.2
+  genblk4[8].genblk1.stage3 (dot_operator_60)
+                                       5.45e-05 7.66e-06 1.49e+03 6.37e-05   0.2
+  genblk4[7].genblk1.stage3 (dot_operator_61)
+                                       5.36e-05 7.56e-06 1.49e+03 6.27e-05   0.2
+  genblk4[6].genblk1.stage3 (dot_operator_62)
+                                       5.31e-05 7.50e-06 1.49e+03 6.20e-05   0.2
+  genblk4[5].genblk1.stage3 (dot_operator_63)
+                                       5.27e-05 7.45e-06 1.49e+03 6.16e-05   0.2
+  genblk4[4].genblk1.stage3 (dot_operator_64)
+                                       5.42e-05 7.64e-06 1.49e+03 6.34e-05   0.2
+  genblk4[3].genblk1.stage3 (dot_operator_65)
+                                       5.16e-05 7.50e-06 1.49e+03 6.06e-05   0.2
+  genblk4[2].genblk1.stage3 (dot_operator_66)
+                                       5.41e-05 7.80e-06 1.50e+03 6.34e-05   0.2
+  genblk4[1].genblk1.stage3 (dot_operator_67)
+                                       6.41e-05 8.86e-06 1.56e+03 7.45e-05   0.2
+  genblk4[0].genblk1.stage3 (dot_operator_68)
+                                       6.19e-05 8.53e-06 1.56e+03 7.19e-05   0.2
+  genblk3[29].genblk1.stage2 (dot_operator_69)
+                                       4.51e-05 1.04e-05 1.57e+03 5.71e-05   0.2
+  genblk3[28].genblk1.stage2 (dot_operator_70)
+                                       4.63e-05 1.07e-05 1.58e+03 5.85e-05   0.2
+  genblk3[27].genblk1.stage2 (dot_operator_71)
+                                       4.47e-05 1.05e-05 1.57e+03 5.68e-05   0.2
+  genblk3[26].genblk1.stage2 (dot_operator_72)
+                                       4.47e-05 1.04e-05 1.57e+03 5.67e-05   0.2
+  genblk3[25].genblk1.stage2 (dot_operator_73)
+                                       8.65e-05 1.04e-05 1.57e+03 9.85e-05   0.3
+  genblk3[24].genblk1.stage2 (dot_operator_74)
+                                       8.63e-05 1.04e-05 1.57e+03 9.83e-05   0.3
+  genblk3[23].genblk1.stage2 (dot_operator_75)
+                                       8.56e-05 1.04e-05 1.58e+03 9.75e-05   0.3
+  genblk3[22].genblk1.stage2 (dot_operator_76)
+                                       8.56e-05 1.03e-05 1.57e+03 9.75e-05   0.3
+  genblk3[21].genblk1.stage2 (dot_operator_77)
+                                       8.70e-05 1.05e-05 1.58e+03 9.90e-05   0.3
+  genblk3[20].genblk1.stage2 (dot_operator_78)
+                                       8.74e-05 1.05e-05 1.58e+03 9.95e-05   0.3
+  genblk3[19].genblk1.stage2 (dot_operator_79)
+                                       8.83e-05 1.06e-05 1.58e+03 1.00e-04   0.3
+  genblk3[18].genblk1.stage2 (dot_operator_80)
+                                       8.78e-05 1.07e-05 1.58e+03 1.00e-04   0.3
+  genblk3[17].genblk1.stage2 (dot_operator_81)
+                                       8.56e-05 1.04e-05 1.57e+03 9.75e-05   0.3
+  genblk3[16].genblk1.stage2 (dot_operator_82)
+                                       8.56e-05 1.03e-05 1.57e+03 9.75e-05   0.3
+  genblk3[15].genblk1.stage2 (dot_operator_83)
+                                       8.57e-05 1.04e-05 1.58e+03 9.77e-05   0.3
+  genblk3[14].genblk1.stage2 (dot_operator_84)
+                                       8.36e-05 1.01e-05 1.58e+03 9.53e-05   0.3
+  genblk3[13].genblk1.stage2 (dot_operator_85)
+                                       8.49e-05 1.03e-05 1.57e+03 9.68e-05   0.3
+  genblk3[12].genblk1.stage2 (dot_operator_86)
+                                       8.19e-05 9.96e-06 1.57e+03 9.35e-05   0.3
+  genblk3[11].genblk1.stage2 (dot_operator_87)
+                                       8.29e-05 1.01e-05 1.57e+03 9.46e-05   0.3
+  genblk3[10].genblk1.stage2 (dot_operator_88)
+                                       8.29e-05 1.01e-05 1.57e+03 9.46e-05   0.3
+  genblk3[9].genblk1.stage2 (dot_operator_89)
+                                       8.26e-05 1.01e-05 1.57e+03 9.42e-05   0.3
+  genblk3[8].genblk1.stage2 (dot_operator_90)
+                                       8.39e-05 1.01e-05 1.57e+03 9.56e-05   0.3
+  genblk3[7].genblk1.stage2 (dot_operator_91)
+                                       8.30e-05 1.01e-05 1.57e+03 9.47e-05   0.3
+  genblk3[6].genblk1.stage2 (dot_operator_92)
+                                       8.59e-05 1.04e-05 1.58e+03 9.79e-05   0.3
+  genblk3[5].genblk1.stage2 (dot_operator_93)
+                                       8.42e-05 1.02e-05 1.57e+03 9.59e-05   0.3
+  genblk3[4].genblk1.stage2 (dot_operator_94)
+                                       8.53e-05 1.03e-05 1.57e+03 9.72e-05   0.3
+  genblk3[3].genblk1.stage2 (dot_operator_95)
+                                       8.62e-05 1.04e-05 1.57e+03 9.82e-05   0.3
+  genblk3[2].genblk1.stage2 (dot_operator_96)
+                                       8.35e-05 1.01e-05 1.57e+03 9.52e-05   0.3
+  genblk3[1].genblk1.stage2 (dot_operator_97)
+                                       7.10e-05 1.03e-05 1.58e+03 8.29e-05   0.3
+  genblk3[0].genblk1.stage2 (dot_operator_98)
+                                       8.20e-05 1.16e-05 1.61e+03 9.53e-05   0.3
+  genblk2[30].stage1 (dot_operator_99) 6.83e-05 1.27e-05 1.69e+03 8.28e-05   0.3
+  genblk2[29].stage1 (dot_operator_100)
+                                       6.96e-05 1.31e-05 1.69e+03 8.44e-05   0.3
+  genblk2[28].stage1 (dot_operator_101)
+                                       1.24e-04 1.32e-05 1.69e+03 1.39e-04   0.4
+  genblk2[27].stage1 (dot_operator_102)
+                                       1.22e-04 1.30e-05 1.69e+03 1.37e-04   0.4
+  genblk2[26].stage1 (dot_operator_103)
+                                       1.24e-04 1.32e-05 1.69e+03 1.39e-04   0.4
+  genblk2[25].stage1 (dot_operator_104)
+                                       1.23e-04 1.31e-05 1.69e+03 1.38e-04   0.4
+  genblk2[24].stage1 (dot_operator_105)
+                                       1.21e-04 1.29e-05 1.70e+03 1.36e-04   0.4
+  genblk2[23].stage1 (dot_operator_106)
+                                       1.21e-04 1.29e-05 1.69e+03 1.35e-04   0.4
+  genblk2[22].stage1 (dot_operator_107)
+                                       1.22e-04 1.29e-05 1.69e+03 1.36e-04   0.4
+  genblk2[21].stage1 (dot_operator_108)
+                                       1.22e-04 1.30e-05 1.70e+03 1.36e-04   0.4
+  genblk2[20].stage1 (dot_operator_109)
+                                       1.22e-04 1.29e-05 1.69e+03 1.36e-04   0.4
+  genblk2[19].stage1 (dot_operator_110)
+                                       1.23e-04 1.31e-05 1.70e+03 1.38e-04   0.4
+  genblk2[18].stage1 (dot_operator_111)
+                                       1.24e-04 1.32e-05 1.69e+03 1.39e-04   0.4
+  genblk2[17].stage1 (dot_operator_112)
+                                       1.22e-04 1.30e-05 1.69e+03 1.37e-04   0.4
+  genblk2[16].stage1 (dot_operator_113)
+                                       1.21e-04 1.29e-05 1.69e+03 1.36e-04   0.4
+  genblk2[15].stage1 (dot_operator_114)
+                                       1.22e-04 1.30e-05 1.69e+03 1.37e-04   0.4
+  genblk2[14].stage1 (dot_operator_115)
+                                       1.20e-04 1.28e-05 1.69e+03 1.35e-04   0.4
+  genblk2[13].stage1 (dot_operator_116)
+                                       1.18e-04 1.25e-05 1.69e+03 1.32e-04   0.4
+  genblk2[12].stage1 (dot_operator_117)
+                                       1.22e-04 1.30e-05 1.69e+03 1.37e-04   0.4
+  genblk2[11].stage1 (dot_operator_118)
+                                       1.20e-04 1.28e-05 1.69e+03 1.35e-04   0.4
+  genblk2[10].stage1 (dot_operator_119)
+                                       1.20e-04 1.28e-05 1.69e+03 1.34e-04   0.4
+  genblk2[9].stage1 (dot_operator_120) 1.20e-04 1.28e-05 1.69e+03 1.34e-04   0.4
+  genblk2[8].stage1 (dot_operator_121) 1.22e-04 1.30e-05 1.69e+03 1.37e-04   0.4
+  genblk2[7].stage1 (dot_operator_122) 1.21e-04 1.29e-05 1.69e+03 1.35e-04   0.4
+  genblk2[6].stage1 (dot_operator_123) 1.18e-04 1.28e-05 1.69e+03 1.33e-04   0.4
+  genblk2[5].stage1 (dot_operator_124) 1.21e-04 1.30e-05 1.69e+03 1.36e-04   0.4
+  genblk2[4].stage1 (dot_operator_125) 1.21e-04 1.31e-05 1.69e+03 1.35e-04   0.4
+  genblk2[3].stage1 (dot_operator_126) 1.18e-04 1.28e-05 1.69e+03 1.33e-04   0.4
+  genblk2[2].stage1 (dot_operator_127) 1.21e-04 1.34e-05 1.69e+03 1.36e-04   0.4
+  genblk2[1].stage1 (dot_operator_128) 1.23e-04 1.38e-05 1.69e+03 1.38e-04   0.4
+  genblk2[0].stage1 (dot_operator_0)   9.14e-05 1.41e-05 1.69e+03 1.07e-04   0.3
+  genblk1[31].g_and_p (pre_process_1)  9.96e-05 1.49e-05 2.01e+03 1.17e-04   0.4
+  genblk1[30].g_and_p (pre_process_2)  1.52e-04 1.51e-05 2.01e+03 1.69e-04   0.5
+  genblk1[29].g_and_p (pre_process_3)  1.55e-04 1.53e-05 2.01e+03 1.72e-04   0.6
+  genblk1[28].g_and_p (pre_process_4)  1.51e-04 1.49e-05 2.01e+03 1.67e-04   0.5
+  genblk1[27].g_and_p (pre_process_5)  1.53e-04 1.51e-05 2.01e+03 1.70e-04   0.5
+  genblk1[26].g_and_p (pre_process_6)  1.53e-04 1.52e-05 2.01e+03 1.70e-04   0.6
+  genblk1[25].g_and_p (pre_process_7)  1.51e-04 1.50e-05 2.01e+03 1.68e-04   0.5
+  genblk1[24].g_and_p (pre_process_8)  1.49e-04 1.47e-05 2.01e+03 1.65e-04   0.5
+  genblk1[23].g_and_p (pre_process_9)  1.53e-04 1.52e-05 2.01e+03 1.70e-04   0.6
+  genblk1[22].g_and_p (pre_process_10) 1.51e-04 1.49e-05 2.01e+03 1.68e-04   0.5
+  genblk1[21].g_and_p (pre_process_11) 1.51e-04 1.49e-05 2.01e+03 1.68e-04   0.5
+  genblk1[20].g_and_p (pre_process_12) 1.53e-04 1.51e-05 2.01e+03 1.70e-04   0.5
+  genblk1[19].g_and_p (pre_process_13) 1.52e-04 1.51e-05 2.01e+03 1.69e-04   0.5
+  genblk1[18].g_and_p (pre_process_14) 1.56e-04 1.55e-05 2.01e+03 1.74e-04   0.6
+  genblk1[17].g_and_p (pre_process_15) 1.51e-04 1.49e-05 2.01e+03 1.68e-04   0.5
+  genblk1[16].g_and_p (pre_process_16) 1.50e-04 1.48e-05 2.01e+03 1.67e-04   0.5
+  genblk1[15].g_and_p (pre_process_17) 1.54e-04 1.53e-05 2.01e+03 1.72e-04   0.6
+  genblk1[14].g_and_p (pre_process_18) 1.49e-04 1.48e-05 2.01e+03 1.66e-04   0.5
+  genblk1[13].g_and_p (pre_process_19) 1.51e-04 1.49e-05 2.01e+03 1.68e-04   0.5
+  genblk1[12].g_and_p (pre_process_20) 1.53e-04 1.51e-05 2.01e+03 1.70e-04   0.6
+  genblk1[11].g_and_p (pre_process_21) 1.52e-04 1.51e-05 2.01e+03 1.69e-04   0.5
+  genblk1[10].g_and_p (pre_process_22) 1.50e-04 1.48e-05 2.01e+03 1.67e-04   0.5
+  genblk1[9].g_and_p (pre_process_23)  1.52e-04 1.50e-05 2.01e+03 1.69e-04   0.5
+  genblk1[8].g_and_p (pre_process_24)  1.53e-04 1.51e-05 2.01e+03 1.70e-04   0.5
+  genblk1[7].g_and_p (pre_process_25)  2.04e-04 1.46e-05 2.01e+03 2.20e-04   0.7
+  genblk1[6].g_and_p (pre_process_26)  2.06e-04 1.47e-05 2.01e+03 2.22e-04   0.7
+  genblk1[5].g_and_p (pre_process_27)  2.10e-04 1.50e-05 2.01e+03 2.27e-04   0.7
+  genblk1[4].g_and_p (pre_process_28)  2.04e-04 1.46e-05 2.01e+03 2.20e-04   0.7
+  genblk1[3].g_and_p (pre_process_29)  2.66e-04 1.46e-05 2.01e+03 2.82e-04   0.9
+  genblk1[2].g_and_p (pre_process_30)  2.72e-04 1.50e-05 2.01e+03 2.89e-04   0.9
+  genblk1[1].g_and_p (pre_process_31)  3.48e-04 1.52e-05 2.01e+03 3.65e-04   1.2
+  genblk1[0].g_and_p (pre_process_0)   3.59e-04 1.48e-05 2.01e+03 3.76e-04   1.2
+1

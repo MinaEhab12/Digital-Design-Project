@@ -1,0 +1,2261 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 200
+Design : Kogge_Stone_32Bits
+Version: O-2018.06-SP5
+Date   : Fri Apr 24 20:04:41 2026
+****************************************
+
+Operating Conditions: ff0p88vm40c   Library: saed14rvt_base_ff0p88vm40c
+Wire Load Model Mode: top
+
+  Startpoint: valid_out_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: valid_out (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  valid_out_reg/CK (SAEDRVT14_FDPRBQ_V2LP_1)              0.00       0.00 r
+  valid_out_reg/Q (SAEDRVT14_FDPRBQ_V2LP_1)               0.09       0.09 f
+  valid_out (out)                                         0.00       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: valid_in (input port clocked by clk)
+  Endpoint: valid_out_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  valid_in (in)                                           0.00       0.10 f
+  U79/X (SAEDRVT14_BUF_S_1)                               0.04       0.14 f
+  U78/X (SAEDRVT14_BUF_S_1)                               0.06       0.20 f
+  valid_out_reg/D (SAEDRVT14_FDPRBQ_V2LP_1)               0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  valid_out_reg/CK (SAEDRVT14_FDPRBQ_V2LP_1)              0.00       0.15 r
+  library hold time                                       0.01       0.16
+  data required time                                                 0.16
+  --------------------------------------------------------------------------
+  data required time                                                 0.16
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: A[31] (input port clocked by clk)
+  Endpoint: overflow_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  A[31] (in)                                              0.00       0.10 r
+  U19/X (SAEDRVT14_OA33_1)                                0.04       0.14 r
+  U17/X (SAEDRVT14_OAI21_0P5)                             0.06       0.20 f
+  overflow_reg/D (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  overflow_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)               0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: Cin (input port clocked by clk)
+  Endpoint: Sum_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  Cin (in)                                                0.00       0.10 f
+  genblk8[0].sum_comp/c (post_process_0)                  0.00       0.10 f
+  genblk8[0].sum_comp/U1/X (SAEDRVT14_EO2_1)              0.04       0.14 f
+  genblk8[0].sum_comp/sum (post_process_0)                0.00       0.14 f
+  U24/X (SAEDRVT14_AO22_0P5)                              0.06       0.20 f
+  Sum_reg[0]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[30]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[30]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[30]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U14/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[30]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[30]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[29]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[29]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[29]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U13/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[29]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[29]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[28]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[28]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U12/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[28]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[28]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[27]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[27]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U11/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[27]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[27]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[26]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[26]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[26]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[26]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U10/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[26]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[26]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[25]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[25]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[25]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U9/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  Sum_reg[25]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[25]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[24]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[24]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[24]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U8/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  Sum_reg[24]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[24]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[23]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[23]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[23]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U7/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  Sum_reg[23]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[23]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[22]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[22]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[22]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U6/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  Sum_reg[22]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[22]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[21]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[21]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[21]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[21]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U5/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  Sum_reg[21]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[21]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[20]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[20]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U4/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  Sum_reg[20]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[20]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[19]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[19]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U3/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  Sum_reg[19]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[19]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[18]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[18]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[18]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[18]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U42/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[18]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[18]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[17]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[17]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[17]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[17]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U41/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[17]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[17]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[16]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[16]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[16]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U40/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[16]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[16]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[15]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[15]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[15]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U39/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[15]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[15]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[14]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[14]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[14]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U38/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[14]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[14]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[13]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[13]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[13]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U37/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[13]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[13]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[12]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[12]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U36/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[12]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[12]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[11]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[11]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U35/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[11]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[11]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[10]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[10]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[10]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U34/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[10]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[10]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[9]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[9]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U33/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[9]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[9]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[8] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[8] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[8]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[8]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U32/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[8]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[8]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[7]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[7]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U31/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[7]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[7]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[6]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[6]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U30/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[6]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[6]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[5]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[5]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U29/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[5]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[5]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[4]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[4]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U28/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[4]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[4]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[3]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U27/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[3]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[2]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U26/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[2]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[1]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[1]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U25/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[1]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[1]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Cout_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Cout_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Cout_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                   0.00       0.00 r
+  Cout_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                    0.12       0.12 f
+  U23/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Cout_reg/D (SAEDRVT14_FDPRBQ_V2_0P5)                    0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Cout_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                   0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Cout_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Cout (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Cout_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                   0.00       0.00 r
+  Cout_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                    0.12       0.12 f
+  Cout (out)                                              0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[30]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[30] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[30]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[30]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[30] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[29]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[29] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[29]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[29]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[29] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[28] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[28]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[28]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[28] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[27] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[27]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[27]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[27] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[26]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[26] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[26]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[26]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[26] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[25]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[25] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[25]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[25]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[25] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[24]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[24] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[24]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[24]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[24] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[23]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[23] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[23]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[23]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[23] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[22] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[22]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[22]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[22] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[21]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[21] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[21]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[21]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[21] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[20] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[20]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[20]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[20] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[19] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[19]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[19]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[19] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[18]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[18] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[18]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[18]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[18] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[17]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[17] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[17]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[17]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[17] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[16]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[16] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[16]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[16]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[16] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[15]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[15]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[15]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[15] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[14]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[14] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[14]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[14]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[14] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[13]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[13] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[13]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[13]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[13] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[12] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[12]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[12]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[12] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[11] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[11]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[11]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[11] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[10]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[10] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[10]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[10]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[10] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[9] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[9]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[9]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum[9] (out)                                            0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[8] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[8] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[8]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[8]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum[8] (out)                                            0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[7]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[7]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum[7] (out)                                            0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[6]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[6]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum[6] (out)                                            0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[5]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[5]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum[5] (out)                                            0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[4]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[4]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum[4] (out)                                            0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[3]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum[3] (out)                                            0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[2]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum[2] (out)                                            0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[1]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[1]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum[1] (out)                                            0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[0]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum[0] (out)                                            0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum[31] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[31]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[31]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  Sum[31] (out)                                           0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: overflow_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: overflow (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  overflow_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)               0.00       0.00 r
+  overflow_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                0.12       0.12 f
+  overflow (out)                                          0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  output external delay                                  -0.10       0.05
+  data required time                                                 0.05
+  --------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: Sum_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[31]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
+  Sum_reg[31]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
+  U16/X (SAEDRVT14_ND2_CDC_0P5)                           0.07       0.19 r
+  U15/X (SAEDRVT14_OAI21_0P5)                             0.06       0.25 f
+  Sum_reg[31]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.25 f
+  data arrival time                                                  0.25
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[31]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.10
+
+
+1

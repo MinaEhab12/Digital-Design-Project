@@ -1,0 +1,269 @@
+ 
+****************************************
+Report : area
+Design : Kogge_Stone_32Bits
+Version: O-2018.06-SP5
+Date   : Fri Apr 24 20:04:36 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed14rvt_base_ss0p72v125c (File: /home/abdelazeem/Desktop/CIM_GP/libs/saed14rvt_base_ss0p72v125c.db)
+
+Number of ports:                         1229
+Number of nets:                          1696
+Number of cells:                          727
+Number of combinational cells:            467
+Number of sequential cells:                35
+Number of macros/black boxes:               0
+Number of buf/inv:                         44
+Number of references:                     234
+
+Combinational area:                168.142798
+Buf/Inv area:                       11.100000
+Noncombinational area:              37.296001
+Macro/Black Box area:                0.000000
+Net Interconnect area:             229.656077
+
+Total cell area:                   205.438800
+Total area:                        435.094876
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ----------------
+Kogge_Stone_32Bits                 205.4388    100.0   29.6592    37.2960  0.0000  Kogge_Stone_32Bits
+genblk1[0].g_and_p                   0.7992      0.4    0.7992     0.0000  0.0000  pre_process_0
+genblk1[10].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_22
+genblk1[11].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_21
+genblk1[12].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_20
+genblk1[13].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_19
+genblk1[14].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_18
+genblk1[15].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_17
+genblk1[16].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_16
+genblk1[17].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_15
+genblk1[18].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_14
+genblk1[19].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_13
+genblk1[1].g_and_p                   0.7992      0.4    0.7992     0.0000  0.0000  pre_process_31
+genblk1[20].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_12
+genblk1[21].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_11
+genblk1[22].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_10
+genblk1[23].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_9
+genblk1[24].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_8
+genblk1[25].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_7
+genblk1[26].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_6
+genblk1[27].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_5
+genblk1[28].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_4
+genblk1[29].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_3
+genblk1[2].g_and_p                   0.7992      0.4    0.7992     0.0000  0.0000  pre_process_30
+genblk1[30].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_2
+genblk1[31].g_and_p                  0.7992      0.4    0.7992     0.0000  0.0000  pre_process_1
+genblk1[3].g_and_p                   0.7992      0.4    0.7992     0.0000  0.0000  pre_process_29
+genblk1[4].g_and_p                   0.7992      0.4    0.7992     0.0000  0.0000  pre_process_28
+genblk1[5].g_and_p                   0.7992      0.4    0.7992     0.0000  0.0000  pre_process_27
+genblk1[6].g_and_p                   0.7992      0.4    0.7992     0.0000  0.0000  pre_process_26
+genblk1[7].g_and_p                   0.7992      0.4    0.7992     0.0000  0.0000  pre_process_25
+genblk1[8].g_and_p                   0.7992      0.4    0.7992     0.0000  0.0000  pre_process_24
+genblk1[9].g_and_p                   0.7992      0.4    0.7992     0.0000  0.0000  pre_process_23
+genblk2[0].stage1                    0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_0
+genblk2[10].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_119
+genblk2[11].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_118
+genblk2[12].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_117
+genblk2[13].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_116
+genblk2[14].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_115
+genblk2[15].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_114
+genblk2[16].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_113
+genblk2[17].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_112
+genblk2[18].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_111
+genblk2[19].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_110
+genblk2[1].stage1                    0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_128
+genblk2[20].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_109
+genblk2[21].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_108
+genblk2[22].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_107
+genblk2[23].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_106
+genblk2[24].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_105
+genblk2[25].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_104
+genblk2[26].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_103
+genblk2[27].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_102
+genblk2[28].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_101
+genblk2[29].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_100
+genblk2[2].stage1                    0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_127
+genblk2[30].stage1                   0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_99
+genblk2[3].stage1                    0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_126
+genblk2[4].stage1                    0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_125
+genblk2[5].stage1                    0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_124
+genblk2[6].stage1                    0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_123
+genblk2[7].stage1                    0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_122
+genblk2[8].stage1                    0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_121
+genblk2[9].stage1                    0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_120
+genblk3[0].genblk1.stage2            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_98
+genblk3[10].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_88
+genblk3[11].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_87
+genblk3[12].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_86
+genblk3[13].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_85
+genblk3[14].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_84
+genblk3[15].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_83
+genblk3[16].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_82
+genblk3[17].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_81
+genblk3[18].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_80
+genblk3[19].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_79
+genblk3[1].genblk1.stage2            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_97
+genblk3[20].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_78
+genblk3[21].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_77
+genblk3[22].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_76
+genblk3[23].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_75
+genblk3[24].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_74
+genblk3[25].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_73
+genblk3[26].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_72
+genblk3[27].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_71
+genblk3[28].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_70
+genblk3[29].genblk1.stage2           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_69
+genblk3[2].genblk1.stage2            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_96
+genblk3[3].genblk1.stage2            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_95
+genblk3[4].genblk1.stage2            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_94
+genblk3[5].genblk1.stage2            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_93
+genblk3[6].genblk1.stage2            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_92
+genblk3[7].genblk1.stage2            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_91
+genblk3[8].genblk1.stage2            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_90
+genblk3[9].genblk1.stage2            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_89
+genblk4[0].genblk1.stage3            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_68
+genblk4[10].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_58
+genblk4[11].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_57
+genblk4[12].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_56
+genblk4[13].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_55
+genblk4[14].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_54
+genblk4[15].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_53
+genblk4[16].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_52
+genblk4[17].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_51
+genblk4[18].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_50
+genblk4[19].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_49
+genblk4[1].genblk1.stage3            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_67
+genblk4[20].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_48
+genblk4[21].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_47
+genblk4[22].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_46
+genblk4[23].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_45
+genblk4[24].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_44
+genblk4[25].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_43
+genblk4[26].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_42
+genblk4[27].genblk1.stage3           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_41
+genblk4[2].genblk1.stage3            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_66
+genblk4[3].genblk1.stage3            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_65
+genblk4[4].genblk1.stage3            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_64
+genblk4[5].genblk1.stage3            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_63
+genblk4[6].genblk1.stage3            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_62
+genblk4[7].genblk1.stage3            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_61
+genblk4[8].genblk1.stage3            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_60
+genblk4[9].genblk1.stage3            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_59
+genblk5[0].genblk1.stage4            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_40
+genblk5[10].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_30
+genblk5[11].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_29
+genblk5[12].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_28
+genblk5[13].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_27
+genblk5[14].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_26
+genblk5[15].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_25
+genblk5[16].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_24
+genblk5[17].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_23
+genblk5[18].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_22
+genblk5[19].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_21
+genblk5[1].genblk1.stage4            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_39
+genblk5[20].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_20
+genblk5[21].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_19
+genblk5[22].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_18
+genblk5[23].genblk1.stage4           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_17
+genblk5[2].genblk1.stage4            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_38
+genblk5[3].genblk1.stage4            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_37
+genblk5[4].genblk1.stage4            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_36
+genblk5[5].genblk1.stage4            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_35
+genblk5[6].genblk1.stage4            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_34
+genblk5[7].genblk1.stage4            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_33
+genblk5[8].genblk1.stage4            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_32
+genblk5[9].genblk1.stage4            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_31
+genblk6[0].genblk1.stage5            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_16
+genblk6[10].genblk1.stage5           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_6
+genblk6[11].genblk1.stage5           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_5
+genblk6[12].genblk1.stage5           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_4
+genblk6[13].genblk1.stage5           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_3
+genblk6[14].genblk1.stage5           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_2
+genblk6[15].genblk1.stage5           0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_1
+genblk6[1].genblk1.stage5            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_15
+genblk6[2].genblk1.stage5            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_14
+genblk6[3].genblk1.stage5            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_13
+genblk6[4].genblk1.stage5            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_12
+genblk6[5].genblk1.stage5            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_11
+genblk6[6].genblk1.stage5            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_10
+genblk6[7].genblk1.stage5            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_9
+genblk6[8].genblk1.stage5            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_8
+genblk6[9].genblk1.stage5            0.6660      0.3    0.6660     0.0000  0.0000  dot_operator_7
+genblk7[10].genblk1.carry_calc4      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_23
+genblk7[11].genblk1.carry_calc4      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_22
+genblk7[12].genblk1.carry_calc4      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_21
+genblk7[13].genblk1.carry_calc4      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_20
+genblk7[14].genblk1.carry_calc4      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_19
+genblk7[15].genblk1.carry_calc4      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_18
+genblk7[16].genblk1.carry_calc4      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_17
+genblk7[17].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_16
+genblk7[18].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_15
+genblk7[19].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_14
+genblk7[1].genblk1.carry_calc0       0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_0
+genblk7[20].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_13
+genblk7[21].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_12
+genblk7[22].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_11
+genblk7[23].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_10
+genblk7[24].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_9
+genblk7[25].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_8
+genblk7[26].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_7
+genblk7[27].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_6
+genblk7[28].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_5
+genblk7[29].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_4
+genblk7[2].genblk1.carry_calc1       0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_31
+genblk7[30].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_3
+genblk7[31].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_2
+genblk7[32].genblk1.carry_calc5      0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_1
+genblk7[3].genblk1.carry_calc2       0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_30
+genblk7[4].genblk1.carry_calc2       0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_29
+genblk7[5].genblk1.carry_calc3       0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_28
+genblk7[6].genblk1.carry_calc3       0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_27
+genblk7[7].genblk1.carry_calc3       0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_26
+genblk7[8].genblk1.carry_calc3       0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_25
+genblk7[9].genblk1.carry_calc4       0.3552      0.2    0.3552     0.0000  0.0000  calc_carry_24
+genblk8[0].sum_comp                  0.4884      0.2    0.4884     0.0000  0.0000  post_process_0
+genblk8[10].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_22
+genblk8[11].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_21
+genblk8[12].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_20
+genblk8[13].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_19
+genblk8[14].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_18
+genblk8[15].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_17
+genblk8[16].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_16
+genblk8[17].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_15
+genblk8[18].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_14
+genblk8[19].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_13
+genblk8[1].sum_comp                  0.4884      0.2    0.4884     0.0000  0.0000  post_process_31
+genblk8[20].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_12
+genblk8[21].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_11
+genblk8[22].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_10
+genblk8[23].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_9
+genblk8[24].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_8
+genblk8[25].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_7
+genblk8[26].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_6
+genblk8[27].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_5
+genblk8[28].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_4
+genblk8[29].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_3
+genblk8[2].sum_comp                  0.4884      0.2    0.4884     0.0000  0.0000  post_process_30
+genblk8[30].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_2
+genblk8[31].sum_comp                 0.4884      0.2    0.4884     0.0000  0.0000  post_process_1
+genblk8[3].sum_comp                  0.4884      0.2    0.4884     0.0000  0.0000  post_process_29
+genblk8[4].sum_comp                  0.4884      0.2    0.4884     0.0000  0.0000  post_process_28
+genblk8[5].sum_comp                  0.4884      0.2    0.4884     0.0000  0.0000  post_process_27
+genblk8[6].sum_comp                  0.4884      0.2    0.4884     0.0000  0.0000  post_process_26
+genblk8[7].sum_comp                  0.4884      0.2    0.4884     0.0000  0.0000  post_process_25
+genblk8[8].sum_comp                  0.4884      0.2    0.4884     0.0000  0.0000  post_process_24
+genblk8[9].sum_comp                  0.4884      0.2    0.4884     0.0000  0.0000  post_process_23
+--------------------------------  ---------  -------  --------  ---------  ------  ----------------
+Total                                                 168.1428    37.2960  0.0000
+
+1
