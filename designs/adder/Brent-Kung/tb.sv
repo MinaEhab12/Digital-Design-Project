@@ -9,7 +9,6 @@ module tb_brent_kung_32;
     logic        Cin;
 
     wire [31:0] Sum;
-    wire        Cout;
     wire        overflow;
     wire        valid_out;
 
@@ -21,7 +20,6 @@ module tb_brent_kung_32;
         .B        (B),
         .Cin      (Cin),
         .Sum      (Sum),
-        .Cout     (Cout),
         .overflow (overflow),
         .valid_out(valid_out)
     );
@@ -64,19 +62,19 @@ module tb_brent_kung_32;
             // 3. Original detailed check logic
             expected = a + b + cin;
 
-            if ({Cout, Sum} !== expected) begin
+            if (Sum !== expected) begin
                 fail_count++;
-                $display("| %-6s | #%-4d | A=%12d  B=%12d  Cin=%0b | Got=%10d  Exp=%10d  Cout=%0b  Ovf=%0b | <-- MISMATCH",
+                $display("| %-6s | #%-4d | A=%12d  B=%12d  Cin=%0b | Got=%10d  Exp=%10d  Ovf=%0b | <-- MISMATCH",
                          "FAIL", pass_count + fail_count,
                          $signed(a), $signed(b), cin,
-                         $signed(Sum), $signed(expected[31:0]), Cout, overflow);
+                         $signed(Sum), $signed(expected[31:0]), overflow);
                 $stop;
             end else begin
                 pass_count++;
-                $display("| %-6s | #%-4d | A=%12d  B=%12d  Cin=%0b | Sum=%12d  Cout=%0b  Ovf=%0b |",
+                $display("| %-6s | #%-4d | A=%12d  B=%12d  Cin=%0b | Sum=%12d  Ovf=%0b |",
                          "PASS", pass_count,
                          $signed(a), $signed(b), cin,
-                         $signed(Sum), Cout, overflow);
+                         $signed(Sum), overflow);
             end
 
             // 4. Clear valid_in so we don't double-trigger

@@ -7,11 +7,10 @@ add wave -noupdate -expand -group Inputs -color White -radix decimal /Kogge_Ston
 add wave -noupdate -expand -group Inputs -color White /Kogge_Stone_32Bits_tb/DUT/Cin
 add wave -noupdate -expand -group Inputs -color White /Kogge_Stone_32Bits_tb/DUT/valid_in
 add wave -noupdate -expand -group Outputs -color Cyan -radix decimal /Kogge_Stone_32Bits_tb/DUT/Sum
-add wave -noupdate -expand -group Outputs -color Cyan /Kogge_Stone_32Bits_tb/DUT/Cout
 add wave -noupdate -expand -group Outputs -color Cyan /Kogge_Stone_32Bits_tb/DUT/overflow
 add wave -noupdate -expand -group Outputs -color Cyan /Kogge_Stone_32Bits_tb/DUT/valid_out
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {52067 ps} 0}
+WaveRestoreCursors {{Cursor 1} {2507023 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -27,4 +26,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {268 ns}
+WaveRestoreZoom {2475400 ps} {2743400 ps}

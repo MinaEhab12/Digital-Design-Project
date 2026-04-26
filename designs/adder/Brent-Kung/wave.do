@@ -10,7 +10,6 @@ add wave -noupdate -expand -group Inputs -color Cyan /tb_brent_kung_32/dut/valid
 add wave -noupdate -expand -group Output /tb_brent_kung_32/dut/Sum
 add wave -noupdate -expand -group Output -color Cyan /tb_brent_kung_32/dut/valid_out
 add wave -noupdate -expand -group Output -color Magenta /tb_brent_kung_32/dut/overflow
-add wave -noupdate -expand -group Output -color Magenta /tb_brent_kung_32/dut/Cout
 add wave -noupdate -group logic /tb_brent_kung_32/dut/G
 add wave -noupdate -group logic /tb_brent_kung_32/dut/P
 TreeUpdate [SetDefaultTree]

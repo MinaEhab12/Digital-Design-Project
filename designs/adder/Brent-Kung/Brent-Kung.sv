@@ -6,7 +6,6 @@ module brent_kung_32 (
     input  logic [31:0] B,
     input  logic        Cin,
     output logic [31:0] Sum,
-    output logic        Cout,
     output logic        overflow,
     output logic        valid_out
 );
@@ -91,7 +90,6 @@ module brent_kung_32 (
     endgenerate
 
     logic [31:0] Sum_comb;
-    logic        Cout_comb;
     logic        overflow_comb;
 
     generate
@@ -100,7 +98,6 @@ module brent_kung_32 (
         end
     endgenerate
 
-    assign Cout_comb     = C[32];
     assign overflow_comb = (A[31] & B[31] & ~Sum_comb[31]) |
                            (~A[31] & ~B[31] & Sum_comb[31]);
 
@@ -110,17 +107,15 @@ module brent_kung_32 (
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             Sum       <= '0;
-            Cout      <= '0;
             overflow  <= '0;
             valid_out <= '0;
         end else if(valid_in) begin
             Sum       <= Sum_comb;
-            Cout      <= Cout_comb;
             overflow  <= overflow_comb;
             valid_out <= 1'b1;
         end
         else begin
-            valid_out <= 1'b0; 
+            valid_out <= 1'b0;
         end
     end
 

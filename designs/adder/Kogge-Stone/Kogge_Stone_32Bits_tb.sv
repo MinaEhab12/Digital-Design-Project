@@ -14,7 +14,6 @@ logic [31:0] A;
 logic [31:0] B;
 logic Cin;
 logic [31:0] Sum;
-logic Cout;
 logic overflow;
 logic valid_out;
 
@@ -134,21 +133,21 @@ endtask
 
 task automatic check();
     begin
-        {Expected_Cout, Expected_sum} = A + B + Cin;
+        Expected_sum = A + B + Cin;
         Expected_overflow = (A[31] & B[31] & ~Expected_sum[31]) | (~A[31] & ~B[31] & Expected_sum[31]);
 
-        if (Sum == Expected_sum && Cout == Expected_Cout && valid_out && overflow == Expected_overflow) begin
+        if (Sum == Expected_sum && valid_out && overflow == Expected_overflow) begin
             pass_count++;
-            $display("| %-6sat time %0t | #%-4d | A=%12d  B=%12d  Cin=%0b | Sum=%12d  Cout=%0b  Ovf=%0b |",
+            $display("| %-6sat time %0t | #%-4d | A=%12d  B=%12d  Cin=%0b | Sum=%12d  Ovf=%0b |",
                          "PASS", $time/1000.0, pass_count,
                          $signed(A), $signed(B), Cin,
-                         $signed(Sum), Cout, overflow);
+                         $signed(Sum), overflow);
         end else begin
             fail_count++;
-            $display("| %-6sat time %0t | #%-4d | A=%12d  B=%12d  Cin=%0b | Got=%10d  Exp=%10d  Cout=%0b  Ovf=%0b | <-- MISMATCH",
+            $display("| %-6sat time %0t | #%-4d | A=%12d  B=%12d  Cin=%0b | Got=%10d  Exp=%10d  Ovf=%0b | <-- MISMATCH",
                          "FAIL", $time/1000.0, pass_count + fail_count,
                          $signed(A), $signed(B), Cin,
-                         $signed(Sum), $signed(Expected_sum), Cout, overflow);
+                         $signed(Sum), $signed(Expected_sum), overflow);
         end
     end
 endtask
