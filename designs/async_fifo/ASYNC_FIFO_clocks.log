@@ -1,0 +1,21 @@
+ 
+****************************************
+Report : clocks
+Design : ASYNC_FIFO
+Version: O-2018.06-SP5
+Date   : Sat May  2 22:25:57 2026
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+rclk            10.00   {0 5}               d f       {rclk}
+wclk            50.00   {0 25}              d f       {wclk}
+--------------------------------------------------------------------------------
+1

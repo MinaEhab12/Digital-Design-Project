@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : ASYNC_FIFO
+Version: O-2018.06-SP5
+Date   : Sat May  2 22:25:56 2026
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_base_ss0p72v125c (File: /home/abdelazeem/Desktop/Menna/VVM/std_cells/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p72v125c.db)
+
+Number of ports:                           72
+Number of nets:                          2236
+Number of cells:                         2198
+Number of combinational cells:           1620
+Number of sequential cells:               578
+Number of macros/black boxes:               0
+Number of buf/inv:                        651
+Number of references:                      32
+
+Combinational area:                425.795988
+Buf/Inv area:                      124.897197
+Noncombinational area:             620.179219
+Macro/Black Box area:                0.000000
+Net Interconnect area:            2246.591665
+
+Total cell area:                  1045.975207
+Total area:                       3292.566872
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+ASYNC_FIFO                        1045.9752    100.0  425.7960   620.1792  0.0000  ASYNC_FIFO
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 425.7960   620.1792  0.0000
+
+1
