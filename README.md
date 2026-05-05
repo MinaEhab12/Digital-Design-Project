@@ -14,6 +14,7 @@ The design addresses one of the key challenges in modern SoC systems: **clock do
 Digital-Design-Project/
 │
 ├── designs/
+|   ├── Top/
 │   ├── Async FIFO/
 │   ├── adder/
 │
