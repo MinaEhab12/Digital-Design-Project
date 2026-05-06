@@ -1,0 +1,472 @@
+ 
+****************************************
+Report : area
+Design : fifo_ks_top
+Version: O-2018.06-SP5
+Date   : Wed May  6 23:32:50 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed14rvt_base_ss0p72v125c (File: /home/abdelazeem/Desktop/CIM_GP/libs/saed14rvt_base_ss0p72v125c.db)
+
+Number of ports:                         1564
+Number of nets:                          4535
+Number of cells:                         3236
+Number of combinational cells:           2388
+Number of sequential cells:               614
+Number of macros/black boxes:               0
+Number of buf/inv:                        550
+Number of references:                       4
+
+Combinational area:                726.384012
+Buf/Inv area:                      139.149604
+Noncombinational area:             654.278423
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1841.539294
+
+Total cell area:                  1380.662435
+Total area:                       3222.201729
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------------------
+fifo_ks_top                       1380.6624    100.0    0.1776     2.1312  0.0000  fifo_ks_top
+async_fifo                        1173.4476     85.0    0.5328     0.0000  0.0000  ASYNC_FIFO_DATA_WIDTH32_FIFO_DEPTH16
+async_fifo/u_mem                  1104.6720     80.0  524.9856   579.6864  0.0000  DUAL_PORT_MEM_DATA_WIDTH32_FIFO_DEPTH16
+async_fifo/u_read_ptr               17.1828      1.2    9.9012     5.3280  0.0000  READ_PTR_FIFO_DEPTH16
+async_fifo/u_read_ptr/rbin2gray      1.9536      0.1    1.9536     0.0000  0.0000  binary_to_gray_converter_FIFO_DEPTH16_1
+async_fifo/u_sync_r2w               12.9648      0.9    2.3088    10.6560  0.0000  SYNCHRONIZER_SYNC_WIDTH5_1
+async_fifo/u_sync_w2r               12.9648      0.9    2.3088    10.6560  0.0000  SYNCHRONIZER_SYNC_WIDTH5_0
+async_fifo/u_write_ptr              25.1304      1.8   13.5864     9.5904  0.0000  WRITE_PTR_FIFO_DEPTH16
+async_fifo/u_write_ptr/Wbin2gray     1.9536      0.1    1.9536     0.0000  0.0000  binary_to_gray_converter_FIFO_DEPTH16_0
+kogge_stone                        204.9060     14.8   30.1920    36.2304  0.0000  Kogge_Stone_32Bits
+kogge_stone/gen_carry_calc[10].gen_carry_calc4.carry_calc4
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_23
+kogge_stone/gen_carry_calc[11].gen_carry_calc4.carry_calc4
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_22
+kogge_stone/gen_carry_calc[12].gen_carry_calc4.carry_calc4
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_21
+kogge_stone/gen_carry_calc[13].gen_carry_calc4.carry_calc4
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_20
+kogge_stone/gen_carry_calc[14].gen_carry_calc4.carry_calc4
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_19
+kogge_stone/gen_carry_calc[15].gen_carry_calc4.carry_calc4
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_18
+kogge_stone/gen_carry_calc[16].gen_carry_calc4.carry_calc4
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_17
+kogge_stone/gen_carry_calc[17].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_16
+kogge_stone/gen_carry_calc[18].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_15
+kogge_stone/gen_carry_calc[19].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_14
+kogge_stone/gen_carry_calc[1].gen_carry_calc0.carry_calc0
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_0
+kogge_stone/gen_carry_calc[20].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_13
+kogge_stone/gen_carry_calc[21].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_12
+kogge_stone/gen_carry_calc[22].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_11
+kogge_stone/gen_carry_calc[23].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_10
+kogge_stone/gen_carry_calc[24].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_9
+kogge_stone/gen_carry_calc[25].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_8
+kogge_stone/gen_carry_calc[26].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_7
+kogge_stone/gen_carry_calc[27].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_6
+kogge_stone/gen_carry_calc[28].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_5
+kogge_stone/gen_carry_calc[29].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_4
+kogge_stone/gen_carry_calc[2].gen_carry_calc1.carry_calc1
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_31
+kogge_stone/gen_carry_calc[30].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_3
+kogge_stone/gen_carry_calc[31].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_2
+kogge_stone/gen_carry_calc[32].gen_carry_calc5.carry_calc5
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_1
+kogge_stone/gen_carry_calc[3].gen_carry_calc2.carry_calc2
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_30
+kogge_stone/gen_carry_calc[4].gen_carry_calc2.carry_calc2
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_29
+kogge_stone/gen_carry_calc[5].gen_carry_calc3.carry_calc3
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_28
+kogge_stone/gen_carry_calc[6].gen_carry_calc3.carry_calc3
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_27
+kogge_stone/gen_carry_calc[7].gen_carry_calc3.carry_calc3
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_26
+kogge_stone/gen_carry_calc[8].gen_carry_calc3.carry_calc3
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_25
+kogge_stone/gen_carry_calc[9].gen_carry_calc4.carry_calc4
+                                     0.3552      0.0    0.3552     0.0000  0.0000  calc_carry_24
+kogge_stone/gen_post_process[0].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_0
+kogge_stone/gen_post_process[10].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_22
+kogge_stone/gen_post_process[11].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_21
+kogge_stone/gen_post_process[12].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_20
+kogge_stone/gen_post_process[13].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_19
+kogge_stone/gen_post_process[14].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_18
+kogge_stone/gen_post_process[15].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_17
+kogge_stone/gen_post_process[16].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_16
+kogge_stone/gen_post_process[17].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_15
+kogge_stone/gen_post_process[18].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_14
+kogge_stone/gen_post_process[19].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_13
+kogge_stone/gen_post_process[1].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_31
+kogge_stone/gen_post_process[20].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_12
+kogge_stone/gen_post_process[21].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_11
+kogge_stone/gen_post_process[22].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_10
+kogge_stone/gen_post_process[23].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_9
+kogge_stone/gen_post_process[24].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_8
+kogge_stone/gen_post_process[25].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_7
+kogge_stone/gen_post_process[26].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_6
+kogge_stone/gen_post_process[27].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_5
+kogge_stone/gen_post_process[28].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_4
+kogge_stone/gen_post_process[29].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_3
+kogge_stone/gen_post_process[2].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_30
+kogge_stone/gen_post_process[30].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_2
+kogge_stone/gen_post_process[31].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_1
+kogge_stone/gen_post_process[3].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_29
+kogge_stone/gen_post_process[4].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_28
+kogge_stone/gen_post_process[5].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_27
+kogge_stone/gen_post_process[6].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_26
+kogge_stone/gen_post_process[7].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_25
+kogge_stone/gen_post_process[8].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_24
+kogge_stone/gen_post_process[9].sum_comp
+                                     0.4884      0.0    0.4884     0.0000  0.0000  post_process_23
+kogge_stone/gen_pre_process[0].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_0
+kogge_stone/gen_pre_process[10].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_22
+kogge_stone/gen_pre_process[11].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_21
+kogge_stone/gen_pre_process[12].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_20
+kogge_stone/gen_pre_process[13].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_19
+kogge_stone/gen_pre_process[14].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_18
+kogge_stone/gen_pre_process[15].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_17
+kogge_stone/gen_pre_process[16].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_16
+kogge_stone/gen_pre_process[17].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_15
+kogge_stone/gen_pre_process[18].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_14
+kogge_stone/gen_pre_process[19].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_13
+kogge_stone/gen_pre_process[1].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_31
+kogge_stone/gen_pre_process[20].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_12
+kogge_stone/gen_pre_process[21].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_11
+kogge_stone/gen_pre_process[22].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_10
+kogge_stone/gen_pre_process[23].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_9
+kogge_stone/gen_pre_process[24].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_8
+kogge_stone/gen_pre_process[25].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_7
+kogge_stone/gen_pre_process[26].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_6
+kogge_stone/gen_pre_process[27].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_5
+kogge_stone/gen_pre_process[28].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_4
+kogge_stone/gen_pre_process[29].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_3
+kogge_stone/gen_pre_process[2].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_30
+kogge_stone/gen_pre_process[30].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_2
+kogge_stone/gen_pre_process[31].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_1
+kogge_stone/gen_pre_process[3].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_29
+kogge_stone/gen_pre_process[4].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_28
+kogge_stone/gen_pre_process[5].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_27
+kogge_stone/gen_pre_process[6].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_26
+kogge_stone/gen_pre_process[7].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_25
+kogge_stone/gen_pre_process[8].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_24
+kogge_stone/gen_pre_process[9].g_and_p
+                                     0.7992      0.1    0.7992     0.0000  0.0000  pre_process_23
+kogge_stone/gen_stage1[0].stage1     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_0
+kogge_stone/gen_stage1[10].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_119
+kogge_stone/gen_stage1[11].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_118
+kogge_stone/gen_stage1[12].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_117
+kogge_stone/gen_stage1[13].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_116
+kogge_stone/gen_stage1[14].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_115
+kogge_stone/gen_stage1[15].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_114
+kogge_stone/gen_stage1[16].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_113
+kogge_stone/gen_stage1[17].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_112
+kogge_stone/gen_stage1[18].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_111
+kogge_stone/gen_stage1[19].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_110
+kogge_stone/gen_stage1[1].stage1     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_128
+kogge_stone/gen_stage1[20].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_109
+kogge_stone/gen_stage1[21].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_108
+kogge_stone/gen_stage1[22].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_107
+kogge_stone/gen_stage1[23].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_106
+kogge_stone/gen_stage1[24].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_105
+kogge_stone/gen_stage1[25].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_104
+kogge_stone/gen_stage1[26].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_103
+kogge_stone/gen_stage1[27].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_102
+kogge_stone/gen_stage1[28].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_101
+kogge_stone/gen_stage1[29].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_100
+kogge_stone/gen_stage1[2].stage1     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_127
+kogge_stone/gen_stage1[30].stage1    0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_99
+kogge_stone/gen_stage1[3].stage1     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_126
+kogge_stone/gen_stage1[4].stage1     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_125
+kogge_stone/gen_stage1[5].stage1     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_124
+kogge_stone/gen_stage1[6].stage1     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_123
+kogge_stone/gen_stage1[7].stage1     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_122
+kogge_stone/gen_stage1[8].stage1     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_121
+kogge_stone/gen_stage1[9].stage1     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_120
+kogge_stone/gen_stage2[0].gen_stage2_first.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_98
+kogge_stone/gen_stage2[10].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_88
+kogge_stone/gen_stage2[11].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_87
+kogge_stone/gen_stage2[12].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_86
+kogge_stone/gen_stage2[13].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_85
+kogge_stone/gen_stage2[14].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_84
+kogge_stone/gen_stage2[15].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_83
+kogge_stone/gen_stage2[16].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_82
+kogge_stone/gen_stage2[17].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_81
+kogge_stone/gen_stage2[18].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_80
+kogge_stone/gen_stage2[19].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_79
+kogge_stone/gen_stage2[1].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_97
+kogge_stone/gen_stage2[20].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_78
+kogge_stone/gen_stage2[21].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_77
+kogge_stone/gen_stage2[22].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_76
+kogge_stone/gen_stage2[23].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_75
+kogge_stone/gen_stage2[24].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_74
+kogge_stone/gen_stage2[25].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_73
+kogge_stone/gen_stage2[26].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_72
+kogge_stone/gen_stage2[27].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_71
+kogge_stone/gen_stage2[28].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_70
+kogge_stone/gen_stage2[29].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_69
+kogge_stone/gen_stage2[2].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_96
+kogge_stone/gen_stage2[3].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_95
+kogge_stone/gen_stage2[4].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_94
+kogge_stone/gen_stage2[5].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_93
+kogge_stone/gen_stage2[6].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_92
+kogge_stone/gen_stage2[7].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_91
+kogge_stone/gen_stage2[8].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_90
+kogge_stone/gen_stage2[9].gen_stage2_rest.stage2
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_89
+kogge_stone/gen_stage3[0].gen_stage3_first.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_68
+kogge_stone/gen_stage3[10].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_58
+kogge_stone/gen_stage3[11].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_57
+kogge_stone/gen_stage3[12].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_56
+kogge_stone/gen_stage3[13].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_55
+kogge_stone/gen_stage3[14].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_54
+kogge_stone/gen_stage3[15].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_53
+kogge_stone/gen_stage3[16].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_52
+kogge_stone/gen_stage3[17].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_51
+kogge_stone/gen_stage3[18].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_50
+kogge_stone/gen_stage3[19].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_49
+kogge_stone/gen_stage3[1].gen_stage3_first.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_67
+kogge_stone/gen_stage3[20].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_48
+kogge_stone/gen_stage3[21].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_47
+kogge_stone/gen_stage3[22].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_46
+kogge_stone/gen_stage3[23].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_45
+kogge_stone/gen_stage3[24].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_44
+kogge_stone/gen_stage3[25].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_43
+kogge_stone/gen_stage3[26].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_42
+kogge_stone/gen_stage3[27].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_41
+kogge_stone/gen_stage3[2].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_66
+kogge_stone/gen_stage3[3].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_65
+kogge_stone/gen_stage3[4].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_64
+kogge_stone/gen_stage3[5].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_63
+kogge_stone/gen_stage3[6].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_62
+kogge_stone/gen_stage3[7].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_61
+kogge_stone/gen_stage3[8].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_60
+kogge_stone/gen_stage3[9].gen_stage3_rest.stage3
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_59
+kogge_stone/gen_stage4[0].gen_stage4_first.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_40
+kogge_stone/gen_stage4[10].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_30
+kogge_stone/gen_stage4[11].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_29
+kogge_stone/gen_stage4[12].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_28
+kogge_stone/gen_stage4[13].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_27
+kogge_stone/gen_stage4[14].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_26
+kogge_stone/gen_stage4[15].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_25
+kogge_stone/gen_stage4[16].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_24
+kogge_stone/gen_stage4[17].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_23
+kogge_stone/gen_stage4[18].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_22
+kogge_stone/gen_stage4[19].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_21
+kogge_stone/gen_stage4[1].gen_stage4_first.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_39
+kogge_stone/gen_stage4[20].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_20
+kogge_stone/gen_stage4[21].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_19
+kogge_stone/gen_stage4[22].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_18
+kogge_stone/gen_stage4[23].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_17
+kogge_stone/gen_stage4[2].gen_stage4_first.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_38
+kogge_stone/gen_stage4[3].gen_stage4_first.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_37
+kogge_stone/gen_stage4[4].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_36
+kogge_stone/gen_stage4[5].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_35
+kogge_stone/gen_stage4[6].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_34
+kogge_stone/gen_stage4[7].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_33
+kogge_stone/gen_stage4[8].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_32
+kogge_stone/gen_stage4[9].gen_stage4_rest.stage4
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_31
+kogge_stone/gen_stage5[0].gen_stage5_first.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_16
+kogge_stone/gen_stage5[10].gen_stage5_rest.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_6
+kogge_stone/gen_stage5[11].gen_stage5_rest.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_5
+kogge_stone/gen_stage5[12].gen_stage5_rest.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_4
+kogge_stone/gen_stage5[13].gen_stage5_rest.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_3
+kogge_stone/gen_stage5[14].gen_stage5_rest.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_2
+kogge_stone/gen_stage5[15].gen_stage5_rest.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_1
+kogge_stone/gen_stage5[1].gen_stage5_first.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_15
+kogge_stone/gen_stage5[2].gen_stage5_first.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_14
+kogge_stone/gen_stage5[3].gen_stage5_first.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_13
+kogge_stone/gen_stage5[4].gen_stage5_first.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_12
+kogge_stone/gen_stage5[5].gen_stage5_first.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_11
+kogge_stone/gen_stage5[6].gen_stage5_first.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_10
+kogge_stone/gen_stage5[7].gen_stage5_first.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_9
+kogge_stone/gen_stage5[8].gen_stage5_rest.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_8
+kogge_stone/gen_stage5[9].gen_stage5_rest.stage5
+                                     0.6660      0.0    0.6660     0.0000  0.0000  dot_operator_7
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------------------
+Total                                                 726.3840   654.2784  0.0000
+
+1

@@ -1,0 +1,509 @@
+Loading db file '/home/abdelazeem/Desktop/CIM_GP/libs/saed14rvt_base_ss0p72v125c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : fifo_ks_top
+Version: O-2018.06-SP5
+Date   : Wed May  6 23:32:55 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed14rvt_base_ss0p72v125c (File: /home/abdelazeem/Desktop/CIM_GP/libs/saed14rvt_base_ss0p72v125c.db)
+
+
+Operating Conditions: ss0p72v125c   Library: saed14rvt_base_ss0p72v125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fifo_ks_top            8000              saed14rvt_base_ss0p72v125c
+
+
+Global Operating Voltage = 0.72 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+fifo_ks_top                            5.61e-02    0.101 2.77e+06    0.160 100.0
+  kogge_stone (Kogge_Stone_32Bits)     1.08e-02 6.84e-03 4.65e+05 1.81e-02  11.3
+    gen_post_process[31].sum_comp (post_process_1)
+                                       4.16e-05 7.54e-06 1.32e+03 5.05e-05   0.0
+    gen_post_process[30].sum_comp (post_process_2)
+                                       1.80e-05 7.77e-06 1.32e+03 2.71e-05   0.0
+    gen_post_process[29].sum_comp (post_process_3)
+                                       1.82e-05 7.86e-06 1.32e+03 2.74e-05   0.0
+    gen_post_process[28].sum_comp (post_process_4)
+                                       1.82e-05 7.85e-06 1.32e+03 2.74e-05   0.0
+    gen_post_process[27].sum_comp (post_process_5)
+                                       1.80e-05 7.76e-06 1.32e+03 2.71e-05   0.0
+    gen_post_process[26].sum_comp (post_process_6)
+                                       1.84e-05 7.95e-06 1.32e+03 2.77e-05   0.0
+    gen_post_process[25].sum_comp (post_process_7)
+                                       1.82e-05 7.87e-06 1.32e+03 2.74e-05   0.0
+    gen_post_process[24].sum_comp (post_process_8)
+                                       1.78e-05 7.65e-06 1.32e+03 2.67e-05   0.0
+    gen_post_process[23].sum_comp (post_process_9)
+                                       1.83e-05 7.92e-06 1.32e+03 2.76e-05   0.0
+    gen_post_process[22].sum_comp (post_process_10)
+                                       1.80e-05 7.76e-06 1.32e+03 2.71e-05   0.0
+    gen_post_process[21].sum_comp (post_process_11)
+                                       1.81e-05 7.80e-06 1.32e+03 2.72e-05   0.0
+    gen_post_process[20].sum_comp (post_process_12)
+                                       1.78e-05 7.65e-06 1.32e+03 2.67e-05   0.0
+    gen_post_process[19].sum_comp (post_process_13)
+                                       1.81e-05 7.80e-06 1.32e+03 2.73e-05   0.0
+    gen_post_process[18].sum_comp (post_process_14)
+                                       1.79e-05 7.73e-06 1.32e+03 2.70e-05   0.0
+    gen_post_process[17].sum_comp (post_process_15)
+                                       1.85e-05 7.96e-06 1.32e+03 2.77e-05   0.0
+    gen_post_process[16].sum_comp (post_process_16)
+                                       1.83e-05 7.87e-06 1.32e+03 2.75e-05   0.0
+    gen_post_process[15].sum_comp (post_process_17)
+                                       1.79e-05 7.70e-06 1.32e+03 2.69e-05   0.0
+    gen_post_process[14].sum_comp (post_process_18)
+                                       1.81e-05 7.79e-06 1.32e+03 2.72e-05   0.0
+    gen_post_process[13].sum_comp (post_process_19)
+                                       1.81e-05 7.78e-06 1.32e+03 2.72e-05   0.0
+    gen_post_process[12].sum_comp (post_process_20)
+                                       1.80e-05 7.74e-06 1.32e+03 2.70e-05   0.0
+    gen_post_process[11].sum_comp (post_process_21)
+                                       1.77e-05 7.64e-06 1.32e+03 2.67e-05   0.0
+    gen_post_process[10].sum_comp (post_process_22)
+                                       1.79e-05 7.70e-06 1.31e+03 2.69e-05   0.0
+    gen_post_process[9].sum_comp (post_process_23)
+                                       1.85e-05 7.95e-06 1.32e+03 2.77e-05   0.0
+    gen_post_process[8].sum_comp (post_process_24)
+                                       1.78e-05 7.67e-06 1.32e+03 2.68e-05   0.0
+    gen_post_process[7].sum_comp (post_process_25)
+                                       1.92e-05 8.44e-06 1.32e+03 2.89e-05   0.0
+    gen_post_process[6].sum_comp (post_process_26)
+                                       1.88e-05 8.32e-06 1.31e+03 2.85e-05   0.0
+    gen_post_process[5].sum_comp (post_process_27)
+                                       2.00e-05 8.86e-06 1.32e+03 3.02e-05   0.0
+    gen_post_process[4].sum_comp (post_process_28)
+                                       2.08e-05 9.28e-06 1.32e+03 3.14e-05   0.0
+    gen_post_process[3].sum_comp (post_process_29)
+                                       2.26e-05 1.04e-05 1.31e+03 3.43e-05   0.0
+    gen_post_process[2].sum_comp (post_process_30)
+                                       2.46e-05 1.14e-05 1.31e+03 3.74e-05   0.0
+    gen_post_process[1].sum_comp (post_process_31)
+                                       2.67e-05 1.29e-05 1.31e+03 4.09e-05   0.0
+    gen_post_process[0].sum_comp (post_process_0)
+                                       2.69e-05 1.35e-05 1.29e+03 4.17e-05   0.0
+    gen_carry_calc[32].gen_carry_calc5.carry_calc5 (calc_carry_1)
+                                          0.000 1.59e-06  904.469 2.49e-06   0.0
+    gen_carry_calc[31].gen_carry_calc5.carry_calc5 (calc_carry_2)
+                                       1.28e-05 1.71e-06  904.963 1.54e-05   0.0
+    gen_carry_calc[30].gen_carry_calc5.carry_calc5 (calc_carry_3)
+                                       1.34e-05 1.78e-06  904.813 1.60e-05   0.0
+    gen_carry_calc[29].gen_carry_calc5.carry_calc5 (calc_carry_4)
+                                       1.32e-05 1.76e-06  905.565 1.59e-05   0.0
+    gen_carry_calc[28].gen_carry_calc5.carry_calc5 (calc_carry_5)
+                                       1.34e-05 1.78e-06  905.160 1.60e-05   0.0
+    gen_carry_calc[27].gen_carry_calc5.carry_calc5 (calc_carry_6)
+                                       1.32e-05 1.76e-06  905.625 1.59e-05   0.0
+    gen_carry_calc[26].gen_carry_calc5.carry_calc5 (calc_carry_7)
+                                       1.37e-05 1.82e-06  905.423 1.64e-05   0.0
+    gen_carry_calc[25].gen_carry_calc5.carry_calc5 (calc_carry_8)
+                                       1.36e-05 1.82e-06  905.151 1.64e-05   0.0
+    gen_carry_calc[24].gen_carry_calc5.carry_calc5 (calc_carry_9)
+                                       1.33e-05 1.78e-06  905.858 1.60e-05   0.0
+    gen_carry_calc[23].gen_carry_calc5.carry_calc5 (calc_carry_10)
+                                       1.40e-05 1.86e-06  905.906 1.67e-05   0.0
+    gen_carry_calc[22].gen_carry_calc5.carry_calc5 (calc_carry_11)
+                                       1.36e-05 1.81e-06  905.074 1.63e-05   0.0
+    gen_carry_calc[21].gen_carry_calc5.carry_calc5 (calc_carry_12)
+                                       1.31e-05 1.74e-06  904.589 1.57e-05   0.0
+    gen_carry_calc[20].gen_carry_calc5.carry_calc5 (calc_carry_13)
+                                       1.26e-05 1.67e-06  905.015 1.51e-05   0.0
+    gen_carry_calc[19].gen_carry_calc5.carry_calc5 (calc_carry_14)
+                                       1.28e-05 1.71e-06  904.821 1.55e-05   0.0
+    gen_carry_calc[18].gen_carry_calc5.carry_calc5 (calc_carry_15)
+                                       1.28e-05 1.71e-06  905.226 1.55e-05   0.0
+    gen_carry_calc[17].gen_carry_calc5.carry_calc5 (calc_carry_16)
+                                       1.33e-05 1.77e-06  905.084 1.59e-05   0.0
+    gen_carry_calc[16].gen_carry_calc4.carry_calc4 (calc_carry_17)
+                                       1.25e-05 1.67e-06  906.625 1.51e-05   0.0
+    gen_carry_calc[15].gen_carry_calc4.carry_calc4 (calc_carry_18)
+                                       1.30e-05 1.73e-06  905.298 1.56e-05   0.0
+    gen_carry_calc[14].gen_carry_calc4.carry_calc4 (calc_carry_19)
+                                       1.29e-05 1.72e-06  905.446 1.55e-05   0.0
+    gen_carry_calc[13].gen_carry_calc4.carry_calc4 (calc_carry_20)
+                                       1.25e-05 1.67e-06  906.012 1.51e-05   0.0
+    gen_carry_calc[12].gen_carry_calc4.carry_calc4 (calc_carry_21)
+                                       1.27e-05 1.71e-06  906.147 1.54e-05   0.0
+    gen_carry_calc[11].gen_carry_calc4.carry_calc4 (calc_carry_22)
+                                       1.32e-05 1.77e-06  905.643 1.59e-05   0.0
+    gen_carry_calc[10].gen_carry_calc4.carry_calc4 (calc_carry_23)
+                                       1.33e-05 1.79e-06  905.545 1.60e-05   0.0
+    gen_carry_calc[9].gen_carry_calc4.carry_calc4 (calc_carry_24)
+                                       1.31e-05 1.75e-06  905.511 1.58e-05   0.0
+    gen_carry_calc[8].gen_carry_calc3.carry_calc3 (calc_carry_25)
+                                       1.33e-05 1.79e-06  906.468 1.60e-05   0.0
+    gen_carry_calc[7].gen_carry_calc3.carry_calc3 (calc_carry_26)
+                                       1.48e-05 2.00e-06  908.005 1.77e-05   0.0
+    gen_carry_calc[6].gen_carry_calc3.carry_calc3 (calc_carry_27)
+                                       1.58e-05 2.20e-06  913.544 1.89e-05   0.0
+    gen_carry_calc[5].gen_carry_calc3.carry_calc3 (calc_carry_28)
+                                       1.69e-05 2.37e-06  917.424 2.02e-05   0.0
+    gen_carry_calc[4].gen_carry_calc2.carry_calc2 (calc_carry_29)
+                                       1.91e-05 2.76e-06  928.547 2.28e-05   0.0
+    gen_carry_calc[3].gen_carry_calc2.carry_calc2 (calc_carry_30)
+                                       2.24e-05 3.39e-06  948.360 2.68e-05   0.0
+    gen_carry_calc[2].gen_carry_calc1.carry_calc1 (calc_carry_31)
+                                       2.76e-05 4.38e-06  981.113 3.30e-05   0.0
+    gen_carry_calc[1].gen_carry_calc0.carry_calc0 (calc_carry_0)
+                                       3.08e-05 5.49e-06 1.03e+03 3.74e-05   0.0
+    gen_stage5[15].gen_stage5_rest.stage5 (dot_operator_1)
+                                       5.68e-06 1.70e-06 1.44e+03 8.81e-06   0.0
+    gen_stage5[14].gen_stage5_rest.stage5 (dot_operator_2)
+                                       5.83e-06 1.75e-06 1.44e+03 9.02e-06   0.0
+    gen_stage5[13].gen_stage5_rest.stage5 (dot_operator_3)
+                                       6.09e-06 1.83e-06 1.44e+03 9.35e-06   0.0
+    gen_stage5[12].gen_stage5_rest.stage5 (dot_operator_4)
+                                       6.03e-06 1.81e-06 1.44e+03 9.27e-06   0.0
+    gen_stage5[11].gen_stage5_rest.stage5 (dot_operator_5)
+                                       6.09e-06 1.83e-06 1.44e+03 9.35e-06   0.0
+    gen_stage5[10].gen_stage5_rest.stage5 (dot_operator_6)
+                                       6.03e-06 1.81e-06 1.44e+03 9.27e-06   0.0
+    gen_stage5[9].gen_stage5_rest.stage5 (dot_operator_7)
+                                       6.24e-06 1.87e-06 1.44e+03 9.55e-06   0.0
+    gen_stage5[8].gen_stage5_rest.stage5 (dot_operator_8)
+                                       6.22e-06 1.86e-06 1.44e+03 9.52e-06   0.0
+    gen_stage5[7].gen_stage5_first.stage5 (dot_operator_9)
+                                       6.09e-06 1.80e-06 1.54e+03 9.43e-06   0.0
+    gen_stage5[6].gen_stage5_first.stage5 (dot_operator_10)
+                                       6.39e-06 1.89e-06 1.54e+03 9.81e-06   0.0
+    gen_stage5[5].gen_stage5_first.stage5 (dot_operator_11)
+                                       6.20e-06 1.84e-06 1.54e+03 9.58e-06   0.0
+    gen_stage5[4].gen_stage5_first.stage5 (dot_operator_12)
+                                       5.98e-06 1.77e-06 1.54e+03 9.29e-06   0.0
+    gen_stage5[3].gen_stage5_first.stage5 (dot_operator_13)
+                                       5.73e-06 1.70e-06 1.54e+03 8.97e-06   0.0
+    gen_stage5[2].gen_stage5_first.stage5 (dot_operator_14)
+                                       5.86e-06 1.74e-06 1.54e+03 9.14e-06   0.0
+    gen_stage5[1].gen_stage5_first.stage5 (dot_operator_15)
+                                       5.86e-06 1.74e-06 1.54e+03 9.13e-06   0.0
+    gen_stage5[0].gen_stage5_first.stage5 (dot_operator_16)
+                                       6.04e-06 1.79e-06 1.54e+03 9.38e-06   0.0
+    gen_stage4[23].gen_stage4_rest.stage4 (dot_operator_17)
+                                       5.69e-06 1.72e-06 1.44e+03 8.85e-06   0.0
+    gen_stage4[22].gen_stage4_rest.stage4 (dot_operator_18)
+                                       5.92e-06 1.77e-06 1.44e+03 9.13e-06   0.0
+    gen_stage4[21].gen_stage4_rest.stage4 (dot_operator_19)
+                                       6.19e-06 1.85e-06 1.44e+03 9.48e-06   0.0
+    gen_stage4[20].gen_stage4_rest.stage4 (dot_operator_20)
+                                       6.15e-06 1.83e-06 1.44e+03 9.42e-06   0.0
+    gen_stage4[19].gen_stage4_rest.stage4 (dot_operator_21)
+                                       6.19e-06 1.84e-06 1.44e+03 9.47e-06   0.0
+    gen_stage4[18].gen_stage4_rest.stage4 (dot_operator_22)
+                                       6.16e-06 1.83e-06 1.44e+03 9.43e-06   0.0
+    gen_stage4[17].gen_stage4_rest.stage4 (dot_operator_23)
+                                       6.37e-06 1.89e-06 1.44e+03 9.70e-06   0.0
+    gen_stage4[16].gen_stage4_rest.stage4 (dot_operator_24)
+                                       6.35e-06 1.89e-06 1.44e+03 9.67e-06   0.0
+    gen_stage4[15].gen_stage4_rest.stage4 (dot_operator_25)
+                                       6.20e-06 1.85e-06 1.44e+03 9.49e-06   0.0
+    gen_stage4[14].gen_stage4_rest.stage4 (dot_operator_26)
+                                       6.48e-06 1.94e-06 1.44e+03 9.86e-06   0.0
+    gen_stage4[13].gen_stage4_rest.stage4 (dot_operator_27)
+                                       6.31e-06 1.89e-06 1.44e+03 9.64e-06   0.0
+    gen_stage4[12].gen_stage4_rest.stage4 (dot_operator_28)
+                                       6.07e-06 1.82e-06 1.44e+03 9.34e-06   0.0
+    gen_stage4[11].gen_stage4_rest.stage4 (dot_operator_29)
+                                       5.83e-06 1.76e-06 1.44e+03 9.03e-06   0.0
+    gen_stage4[10].gen_stage4_rest.stage4 (dot_operator_30)
+                                       5.95e-06 1.79e-06 1.44e+03 9.18e-06   0.0
+    gen_stage4[9].gen_stage4_rest.stage4 (dot_operator_31)
+                                       5.95e-06 1.79e-06 1.44e+03 9.18e-06   0.0
+    gen_stage4[8].gen_stage4_rest.stage4 (dot_operator_32)
+                                       6.12e-06 1.84e-06 1.44e+03 9.40e-06   0.0
+    gen_stage4[7].gen_stage4_rest.stage4 (dot_operator_33)
+                                       1.27e-05 1.76e-06 1.44e+03 1.59e-05   0.0
+    gen_stage4[6].gen_stage4_rest.stage4 (dot_operator_34)
+                                       1.32e-05 1.82e-06 1.44e+03 1.65e-05   0.0
+    gen_stage4[5].gen_stage4_rest.stage4 (dot_operator_35)
+                                       1.32e-05 1.82e-06 1.44e+03 1.64e-05   0.0
+    gen_stage4[4].gen_stage4_rest.stage4 (dot_operator_36)
+                                       1.28e-05 1.76e-06 1.45e+03 1.60e-05   0.0
+    gen_stage4[3].gen_stage4_first.stage4 (dot_operator_37)
+                                       1.38e-05 1.86e-06 1.54e+03 1.72e-05   0.0
+    gen_stage4[2].gen_stage4_first.stage4 (dot_operator_38)
+                                       1.41e-05 1.90e-06 1.54e+03 1.75e-05   0.0
+    gen_stage4[1].gen_stage4_first.stage4 (dot_operator_39)
+                                       1.42e-05 1.92e-06 1.54e+03 1.76e-05   0.0
+    gen_stage4[0].gen_stage4_first.stage4 (dot_operator_40)
+                                       1.39e-05 1.88e-06 1.54e+03 1.73e-05   0.0
+    gen_stage3[27].gen_stage3_rest.stage3 (dot_operator_41)
+                                       7.07e-06 2.02e-06 1.47e+03 1.06e-05   0.0
+    gen_stage3[26].gen_stage3_rest.stage3 (dot_operator_42)
+                                       7.42e-06 2.07e-06 1.47e+03 1.10e-05   0.0
+    gen_stage3[25].gen_stage3_rest.stage3 (dot_operator_43)
+                                       7.52e-06 2.12e-06 1.47e+03 1.11e-05   0.0
+    gen_stage3[24].gen_stage3_rest.stage3 (dot_operator_44)
+                                       7.48e-06 2.12e-06 1.47e+03 1.11e-05   0.0
+    gen_stage3[23].gen_stage3_rest.stage3 (dot_operator_45)
+                                       7.56e-06 2.15e-06 1.47e+03 1.12e-05   0.0
+    gen_stage3[22].gen_stage3_rest.stage3 (dot_operator_46)
+                                       7.69e-06 2.17e-06 1.47e+03 1.13e-05   0.0
+    gen_stage3[21].gen_stage3_rest.stage3 (dot_operator_47)
+                                       8.15e-06 2.25e-06 1.48e+03 1.19e-05   0.0
+    gen_stage3[20].gen_stage3_rest.stage3 (dot_operator_48)
+                                       7.77e-06 2.20e-06 1.47e+03 1.14e-05   0.0
+    gen_stage3[19].gen_stage3_rest.stage3 (dot_operator_49)
+                                       1.60e-05 2.17e-06 1.47e+03 1.97e-05   0.0
+    gen_stage3[18].gen_stage3_rest.stage3 (dot_operator_50)
+                                       1.66e-05 2.25e-06 1.47e+03 2.04e-05   0.0
+    gen_stage3[17].gen_stage3_rest.stage3 (dot_operator_51)
+                                       1.66e-05 2.23e-06 1.48e+03 2.03e-05   0.0
+    gen_stage3[16].gen_stage3_rest.stage3 (dot_operator_52)
+                                       1.60e-05 2.15e-06 1.48e+03 1.97e-05   0.0
+    gen_stage3[15].gen_stage3_rest.stage3 (dot_operator_53)
+                                       1.57e-05 2.10e-06 1.47e+03 1.93e-05   0.0
+    gen_stage3[14].gen_stage3_rest.stage3 (dot_operator_54)
+                                       1.60e-05 2.15e-06 1.48e+03 1.97e-05   0.0
+    gen_stage3[13].gen_stage3_rest.stage3 (dot_operator_55)
+                                       1.60e-05 2.14e-06 1.48e+03 1.96e-05   0.0
+    gen_stage3[12].gen_stage3_rest.stage3 (dot_operator_56)
+                                       1.64e-05 2.19e-06 1.48e+03 2.01e-05   0.0
+    gen_stage3[11].gen_stage3_rest.stage3 (dot_operator_57)
+                                       1.57e-05 2.10e-06 1.48e+03 1.93e-05   0.0
+    gen_stage3[10].gen_stage3_rest.stage3 (dot_operator_58)
+                                       1.55e-05 2.10e-06 1.47e+03 1.91e-05   0.0
+    gen_stage3[9].gen_stage3_rest.stage3 (dot_operator_59)
+                                       1.57e-05 2.11e-06 1.47e+03 1.92e-05   0.0
+    gen_stage3[8].gen_stage3_rest.stage3 (dot_operator_60)
+                                       1.53e-05 2.06e-06 1.47e+03 1.88e-05   0.0
+    gen_stage3[7].gen_stage3_rest.stage3 (dot_operator_61)
+                                       1.55e-05 2.09e-06 1.47e+03 1.91e-05   0.0
+    gen_stage3[6].gen_stage3_rest.stage3 (dot_operator_62)
+                                       1.57e-05 2.13e-06 1.47e+03 1.93e-05   0.0
+    gen_stage3[5].gen_stage3_rest.stage3 (dot_operator_63)
+                                       1.57e-05 2.13e-06 1.47e+03 1.93e-05   0.0
+    gen_stage3[4].gen_stage3_rest.stage3 (dot_operator_64)
+                                       1.55e-05 2.09e-06 1.47e+03 1.91e-05   0.0
+    gen_stage3[3].gen_stage3_rest.stage3 (dot_operator_65)
+                                       1.44e-05 2.09e-06 1.48e+03 1.80e-05   0.0
+    gen_stage3[2].gen_stage3_rest.stage3 (dot_operator_66)
+                                       1.65e-05 2.36e-06 1.49e+03 2.04e-05   0.0
+    gen_stage3[1].gen_stage3_first.stage3 (dot_operator_67)
+                                       2.27e-05 3.10e-06 1.56e+03 2.74e-05   0.0
+    gen_stage3[0].gen_stage3_first.stage3 (dot_operator_68)
+                                       2.26e-05 3.10e-06 1.56e+03 2.72e-05   0.0
+    gen_stage2[29].gen_stage2_rest.stage2 (dot_operator_69)
+                                       2.10e-05 3.91e-06 1.59e+03 2.65e-05   0.0
+    gen_stage2[28].gen_stage2_rest.stage2 (dot_operator_70)
+                                       2.06e-05 3.86e-06 1.58e+03 2.60e-05   0.0
+    gen_stage2[27].gen_stage2_rest.stage2 (dot_operator_71)
+                                       2.07e-05 3.93e-06 1.58e+03 2.62e-05   0.0
+    gen_stage2[26].gen_stage2_rest.stage2 (dot_operator_72)
+                                       2.09e-05 3.93e-06 1.58e+03 2.65e-05   0.0
+    gen_stage2[25].gen_stage2_rest.stage2 (dot_operator_73)
+                                       3.70e-05 3.91e-06 1.58e+03 4.24e-05   0.0
+    gen_stage2[24].gen_stage2_rest.stage2 (dot_operator_74)
+                                       3.77e-05 3.99e-06 1.58e+03 4.33e-05   0.0
+    gen_stage2[23].gen_stage2_rest.stage2 (dot_operator_75)
+                                       3.74e-05 3.98e-06 1.58e+03 4.30e-05   0.0
+    gen_stage2[22].gen_stage2_rest.stage2 (dot_operator_76)
+                                       3.78e-05 4.03e-06 1.58e+03 4.34e-05   0.0
+    gen_stage2[21].gen_stage2_rest.stage2 (dot_operator_77)
+                                       3.81e-05 4.03e-06 1.59e+03 4.37e-05   0.0
+    gen_stage2[20].gen_stage2_rest.stage2 (dot_operator_78)
+                                       3.88e-05 4.13e-06 1.58e+03 4.45e-05   0.0
+    gen_stage2[19].gen_stage2_rest.stage2 (dot_operator_79)
+                                       3.80e-05 4.03e-06 1.59e+03 4.36e-05   0.0
+    gen_stage2[18].gen_stage2_rest.stage2 (dot_operator_80)
+                                       3.66e-05 3.89e-06 1.58e+03 4.21e-05   0.0
+    gen_stage2[17].gen_stage2_rest.stage2 (dot_operator_81)
+                                       3.74e-05 3.93e-06 1.58e+03 4.29e-05   0.0
+    gen_stage2[16].gen_stage2_rest.stage2 (dot_operator_82)
+                                       3.79e-05 4.00e-06 1.58e+03 4.35e-05   0.0
+    gen_stage2[15].gen_stage2_rest.stage2 (dot_operator_83)
+                                       3.78e-05 3.99e-06 1.58e+03 4.33e-05   0.0
+    gen_stage2[14].gen_stage2_rest.stage2 (dot_operator_84)
+                                       3.75e-05 4.00e-06 1.59e+03 4.31e-05   0.0
+    gen_stage2[13].gen_stage2_rest.stage2 (dot_operator_85)
+                                       3.69e-05 3.89e-06 1.58e+03 4.23e-05   0.0
+    gen_stage2[12].gen_stage2_rest.stage2 (dot_operator_86)
+                                       3.61e-05 3.84e-06 1.58e+03 4.15e-05   0.0
+    gen_stage2[11].gen_stage2_rest.stage2 (dot_operator_87)
+                                       3.55e-05 3.78e-06 1.58e+03 4.08e-05   0.0
+    gen_stage2[10].gen_stage2_rest.stage2 (dot_operator_88)
+                                       3.67e-05 3.87e-06 1.58e+03 4.21e-05   0.0
+    gen_stage2[9].gen_stage2_rest.stage2 (dot_operator_89)
+                                       3.72e-05 3.92e-06 1.58e+03 4.27e-05   0.0
+    gen_stage2[8].gen_stage2_rest.stage2 (dot_operator_90)
+                                       3.73e-05 3.94e-06 1.58e+03 4.28e-05   0.0
+    gen_stage2[7].gen_stage2_rest.stage2 (dot_operator_91)
+                                       3.50e-05 3.77e-06 1.58e+03 4.03e-05   0.0
+    gen_stage2[6].gen_stage2_rest.stage2 (dot_operator_92)
+                                       3.67e-05 3.90e-06 1.58e+03 4.22e-05   0.0
+    gen_stage2[5].gen_stage2_rest.stage2 (dot_operator_93)
+                                       3.63e-05 3.84e-06 1.58e+03 4.17e-05   0.0
+    gen_stage2[4].gen_stage2_rest.stage2 (dot_operator_94)
+                                       3.68e-05 3.93e-06 1.58e+03 4.23e-05   0.0
+    gen_stage2[3].gen_stage2_rest.stage2 (dot_operator_95)
+                                       3.79e-05 4.04e-06 1.58e+03 4.36e-05   0.0
+    gen_stage2[2].gen_stage2_rest.stage2 (dot_operator_96)
+                                       3.79e-05 4.00e-06 1.58e+03 4.35e-05   0.0
+    gen_stage2[1].gen_stage2_rest.stage2 (dot_operator_97)
+                                       2.83e-05 4.03e-06 1.58e+03 3.39e-05   0.0
+    gen_stage2[0].gen_stage2_first.stage2 (dot_operator_98)
+                                       3.65e-05 5.12e-06 1.63e+03 4.32e-05   0.0
+    gen_stage1[30].stage1 (dot_operator_99)
+                                       3.88e-05 6.09e-06 1.72e+03 4.66e-05   0.0
+    gen_stage1[29].stage1 (dot_operator_100)
+                                       3.92e-05 6.20e-06 1.72e+03 4.72e-05   0.0
+    gen_stage1[28].stage1 (dot_operator_101)
+                                       6.67e-05 6.31e-06 1.72e+03 7.47e-05   0.0
+    gen_stage1[27].stage1 (dot_operator_102)
+                                       6.38e-05 6.06e-06 1.72e+03 7.16e-05   0.0
+    gen_stage1[26].stage1 (dot_operator_103)
+                                       6.40e-05 6.08e-06 1.71e+03 7.18e-05   0.0
+    gen_stage1[25].stage1 (dot_operator_104)
+                                       6.61e-05 6.24e-06 1.72e+03 7.41e-05   0.0
+    gen_stage1[24].stage1 (dot_operator_105)
+                                       6.49e-05 6.16e-06 1.72e+03 7.28e-05   0.0
+    gen_stage1[23].stage1 (dot_operator_106)
+                                       6.71e-05 6.37e-06 1.72e+03 7.52e-05   0.0
+    gen_stage1[22].stage1 (dot_operator_107)
+                                       6.47e-05 6.15e-06 1.72e+03 7.26e-05   0.0
+    gen_stage1[21].stage1 (dot_operator_108)
+                                       6.71e-05 6.40e-06 1.72e+03 7.52e-05   0.0
+    gen_stage1[20].stage1 (dot_operator_109)
+                                       6.63e-05 6.29e-06 1.72e+03 7.43e-05   0.0
+    gen_stage1[19].stage1 (dot_operator_110)
+                                       6.57e-05 6.26e-06 1.72e+03 7.37e-05   0.0
+    gen_stage1[18].stage1 (dot_operator_111)
+                                       6.47e-05 6.11e-06 1.72e+03 7.25e-05   0.0
+    gen_stage1[17].stage1 (dot_operator_112)
+                                       6.58e-05 6.21e-06 1.72e+03 7.37e-05   0.0
+    gen_stage1[16].stage1 (dot_operator_113)
+                                       6.64e-05 6.27e-06 1.72e+03 7.44e-05   0.0
+    gen_stage1[15].stage1 (dot_operator_114)
+                                       6.47e-05 6.15e-06 1.72e+03 7.26e-05   0.0
+    gen_stage1[14].stage1 (dot_operator_115)
+                                       6.50e-05 6.17e-06 1.72e+03 7.29e-05   0.0
+    gen_stage1[13].stage1 (dot_operator_116)
+                                       6.63e-05 6.31e-06 1.72e+03 7.44e-05   0.0
+    gen_stage1[12].stage1 (dot_operator_117)
+                                       6.46e-05 6.13e-06 1.72e+03 7.25e-05   0.0
+    gen_stage1[11].stage1 (dot_operator_118)
+                                       6.49e-05 6.15e-06 1.71e+03 7.28e-05   0.0
+    gen_stage1[10].stage1 (dot_operator_119)
+                                       6.28e-05 6.00e-06 1.71e+03 7.05e-05   0.0
+    gen_stage1[9].stage1 (dot_operator_120)
+                                       6.73e-05 6.38e-06 1.71e+03 7.54e-05   0.0
+    gen_stage1[8].stage1 (dot_operator_121)
+                                       6.60e-05 6.29e-06 1.72e+03 7.41e-05   0.0
+    gen_stage1[7].stage1 (dot_operator_122)
+                                       6.54e-05 6.24e-06 1.71e+03 7.34e-05   0.0
+    gen_stage1[6].stage1 (dot_operator_123)
+                                       6.41e-05 6.21e-06 1.71e+03 7.20e-05   0.0
+    gen_stage1[5].stage1 (dot_operator_124)
+                                       6.51e-05 6.32e-06 1.71e+03 7.31e-05   0.0
+    gen_stage1[4].stage1 (dot_operator_125)
+                                       6.77e-05 6.52e-06 1.72e+03 7.59e-05   0.0
+    gen_stage1[3].stage1 (dot_operator_126)
+                                       6.55e-05 6.41e-06 1.72e+03 7.36e-05   0.0
+    gen_stage1[2].stage1 (dot_operator_127)
+                                       6.58e-05 6.57e-06 1.71e+03 7.41e-05   0.0
+    gen_stage1[1].stage1 (dot_operator_128)
+                                       6.49e-05 6.57e-06 1.71e+03 7.32e-05   0.0
+    gen_stage1[0].stage1 (dot_operator_0)
+                                       4.54e-05 6.90e-06 1.72e+03 5.40e-05   0.0
+    gen_pre_process[31].g_and_p (pre_process_1)
+                                       6.46e-05 8.41e-06 1.79e+03 7.48e-05   0.0
+    gen_pre_process[30].g_and_p (pre_process_2)
+                                       9.19e-05 8.16e-06 1.78e+03 1.02e-04   0.1
+    gen_pre_process[29].g_and_p (pre_process_3)
+                                       9.31e-05 8.27e-06 1.79e+03 1.03e-04   0.1
+    gen_pre_process[28].g_and_p (pre_process_4)
+                                       9.38e-05 8.32e-06 1.79e+03 1.04e-04   0.1
+    gen_pre_process[27].g_and_p (pre_process_5)
+                                       9.21e-05 8.19e-06 1.79e+03 1.02e-04   0.1
+    gen_pre_process[26].g_and_p (pre_process_6)
+                                       9.35e-05 8.30e-06 1.79e+03 1.04e-04   0.1
+    gen_pre_process[25].g_and_p (pre_process_7)
+                                       9.36e-05 8.31e-06 1.79e+03 1.04e-04   0.1
+    gen_pre_process[24].g_and_p (pre_process_8)
+                                       9.29e-05 8.26e-06 1.79e+03 1.03e-04   0.1
+    gen_pre_process[23].g_and_p (pre_process_9)
+                                       9.40e-05 8.35e-06 1.79e+03 1.04e-04   0.1
+    gen_pre_process[22].g_and_p (pre_process_10)
+                                       9.21e-05 8.20e-06 1.79e+03 1.02e-04   0.1
+    gen_pre_process[21].g_and_p (pre_process_11)
+                                       9.43e-05 8.38e-06 1.79e+03 1.04e-04   0.1
+    gen_pre_process[20].g_and_p (pre_process_12)
+                                       9.21e-05 8.19e-06 1.79e+03 1.02e-04   0.1
+    gen_pre_process[19].g_and_p (pre_process_13)
+                                       9.35e-05 8.31e-06 1.79e+03 1.04e-04   0.1
+    gen_pre_process[18].g_and_p (pre_process_14)
+                                       9.07e-05 8.05e-06 1.79e+03 1.00e-04   0.1
+    gen_pre_process[17].g_and_p (pre_process_15)
+                                       9.34e-05 8.28e-06 1.78e+03 1.04e-04   0.1
+    gen_pre_process[16].g_and_p (pre_process_16)
+                                       9.49e-05 8.42e-06 1.78e+03 1.05e-04   0.1
+    gen_pre_process[15].g_and_p (pre_process_17)
+                                       9.20e-05 8.17e-06 1.78e+03 1.02e-04   0.1
+    gen_pre_process[14].g_and_p (pre_process_18)
+                                       9.55e-05 8.52e-06 1.79e+03 1.06e-04   0.1
+    gen_pre_process[13].g_and_p (pre_process_19)
+                                       9.40e-05 8.37e-06 1.79e+03 1.04e-04   0.1
+    gen_pre_process[12].g_and_p (pre_process_20)
+                                       9.39e-05 8.34e-06 1.79e+03 1.04e-04   0.1
+    gen_pre_process[11].g_and_p (pre_process_21)
+                                       9.25e-05 8.22e-06 1.79e+03 1.02e-04   0.1
+    gen_pre_process[10].g_and_p (pre_process_22)
+                                       9.43e-05 8.40e-06 1.79e+03 1.04e-04   0.1
+    gen_pre_process[9].g_and_p (pre_process_23)
+                                       9.54e-05 8.49e-06 1.79e+03 1.06e-04   0.1
+    gen_pre_process[8].g_and_p (pre_process_24)
+                                       9.28e-05 8.26e-06 1.79e+03 1.03e-04   0.1
+    gen_pre_process[7].g_and_p (pre_process_25)
+                                       1.29e-04 8.52e-06 1.79e+03 1.39e-04   0.1
+    gen_pre_process[6].g_and_p (pre_process_26)
+                                       1.23e-04 8.15e-06 1.79e+03 1.33e-04   0.1
+    gen_pre_process[5].g_and_p (pre_process_27)
+                                       1.27e-04 8.37e-06 1.79e+03 1.37e-04   0.1
+    gen_pre_process[4].g_and_p (pre_process_28)
+                                       1.26e-04 8.28e-06 1.78e+03 1.36e-04   0.1
+    gen_pre_process[3].g_and_p (pre_process_29)
+                                       1.64e-04 8.44e-06 1.78e+03 1.75e-04   0.1
+    gen_pre_process[2].g_and_p (pre_process_30)
+                                       1.63e-04 8.36e-06 1.79e+03 1.73e-04   0.1
+    gen_pre_process[1].g_and_p (pre_process_31)
+                                       1.99e-04 8.19e-06 1.79e+03 2.09e-04   0.1
+    gen_pre_process[0].g_and_p (pre_process_0)
+                                       2.09e-04 8.38e-06 1.79e+03 2.20e-04   0.1
+  async_fifo (ASYNC_FIFO_DATA_WIDTH32_FIFO_DEPTH16)
+                                       4.53e-02 9.40e-02 2.30e+06    0.142  88.5
+    u_mem (DUAL_PORT_MEM_DATA_WIDTH32_FIFO_DEPTH16)
+                                       4.15e-02 8.82e-02 2.16e+06    0.132  82.4
+    u_sync_r2w (SYNCHRONIZER_SYNC_WIDTH5_1)
+                                       2.77e-04 1.60e-03 2.50e+04 1.90e-03   1.2
+    u_sync_w2r (SYNCHRONIZER_SYNC_WIDTH5_0)
+                                       2.66e-04 1.63e-03 2.52e+04 1.92e-03   1.2
+    u_read_ptr (READ_PTR_FIFO_DEPTH16) 1.03e-03 8.90e-04 3.42e+04 1.96e-03   1.2
+      rbin2gray (binary_to_gray_converter_FIFO_DEPTH16_1)
+                                       8.65e-05 1.21e-05 4.57e+03 1.03e-04   0.1
+    u_write_ptr (WRITE_PTR_FIFO_DEPTH16)
+                                       1.91e-03 1.69e-03 5.31e+04 3.66e-03   2.3
+      Wbin2gray (binary_to_gray_converter_FIFO_DEPTH16_0)
+                                       8.67e-05 1.67e-05 4.63e+03 1.08e-04   0.1
+1
