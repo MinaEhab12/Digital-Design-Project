@@ -3,7 +3,7 @@
 Report : area
 Design : brent_kung_32
 Version: O-2018.06-SP5
-Date   : Fri Apr 24 19:57:22 2026
+Date   : Thu May 14 00:25:04 2026
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -11,23 +11,23 @@ Library(s) Used:
 
     saed14rvt_base_ss0p72v125c (File: /home/abdelazeem/Desktop/CIM_GP/libs/saed14rvt_base_ss0p72v125c.db)
 
-Number of ports:                          103
-Number of nets:                           449
-Number of cells:                          381
-Number of combinational cells:            346
-Number of sequential cells:                35
+Number of ports:                          102
+Number of nets:                           422
+Number of cells:                          354
+Number of combinational cells:            320
+Number of sequential cells:                34
 Number of macros/black boxes:               0
-Number of buf/inv:                         80
-Number of references:                      35
+Number of buf/inv:                         68
+Number of references:                      34
 
-Combinational area:                110.733602
-Buf/Inv area:                       16.072800
-Noncombinational area:              37.296001
+Combinational area:                105.982802
+Buf/Inv area:                       13.586400
+Noncombinational area:              36.230401
 Macro/Black Box area:                0.000000
-Net Interconnect area:             181.627799
+Net Interconnect area:             177.422056
 
-Total cell area:                   148.029603
-Total area:                        329.657402
+Total cell area:                   142.213203
+Total area:                        319.635259
 
 Hierarchical area distribution
 ------------------------------
@@ -37,8 +37,8 @@ Hierarchical area distribution
 Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
                                   Total      Total    national  national   boxes   Design
 --------------------------------  ---------  -------  --------  ---------  ------  ---------
-brent_kung_32                      148.0296    100.0  110.7336    37.2960  0.0000  brent_kung_32
+brent_kung_32                      142.2132    100.0  105.9828    36.2304  0.0000  brent_kung_32
 --------------------------------  ---------  -------  --------  ---------  ------  ---------
-Total                                                 110.7336    37.2960  0.0000
+Total                                                 105.9828    36.2304  0.0000
 
 1

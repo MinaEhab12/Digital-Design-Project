@@ -9,7 +9,7 @@ Report : power
         -analysis_effort low
 Design : brent_kung_32
 Version: O-2018.06-SP5
-Date   : Fri Apr 24 19:57:37 2026
+Date   : Thu May 14 00:25:11 2026
 ****************************************
 
 
@@ -39,5 +39,5 @@ Power-specific unit information :
                                        Switch   Int      Leak     Total
 Hierarchy                              Power    Power    Power    Power    %
 --------------------------------------------------------------------------------
-brent_kung_32                          1.70e-02 8.16e-03 2.91e+05 2.54e-02 100.0
+brent_kung_32                          1.64e-02 7.98e-03 2.85e+05 2.47e-02 100.0
 1

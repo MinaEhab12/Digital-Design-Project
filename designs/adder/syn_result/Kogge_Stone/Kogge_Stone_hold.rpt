@@ -6,7 +6,7 @@ Report : timing
         -max_paths 200
 Design : Kogge_Stone_32Bits
 Version: O-2018.06-SP5
-Date   : Fri Apr 24 20:04:41 2026
+Date   : Thu May 14 00:22:41 2026
 ****************************************
 
 Operating Conditions: ff0p88vm40c   Library: saed14rvt_base_ff0p88vm40c
@@ -59,8 +59,8 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   input external delay                                    0.10       0.10 f
   valid_in (in)                                           0.00       0.10 f
-  U79/X (SAEDRVT14_BUF_S_1)                               0.04       0.14 f
-  U78/X (SAEDRVT14_BUF_S_1)                               0.06       0.20 f
+  U83/X (SAEDRVT14_BUF_S_1)                               0.04       0.14 f
+  U82/X (SAEDRVT14_BUF_S_1)                               0.06       0.20 f
   valid_out_reg/D (SAEDRVT14_FDPRBQ_V2LP_1)               0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -93,8 +93,8 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   input external delay                                    0.10       0.10 r
   A[31] (in)                                              0.00       0.10 r
-  U19/X (SAEDRVT14_OA33_1)                                0.04       0.14 r
-  U17/X (SAEDRVT14_OAI21_0P5)                             0.06       0.20 f
+  U21/X (SAEDRVT14_OA33_1)                                0.04       0.14 r
+  U19/X (SAEDRVT14_OAI21_0P5)                             0.06       0.20 f
   overflow_reg/D (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -111,8 +111,8 @@ Wire Load Model Mode: top
   slack (MET)                                                        0.04
 
 
-  Startpoint: Cin (input port clocked by clk)
-  Endpoint: Sum_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: Sum_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[4] (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -124,19 +124,112 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  input external delay                                    0.10       0.10 f
-  Cin (in)                                                0.00       0.10 f
-  genblk8[0].sum_comp/c (post_process_0)                  0.00       0.10 f
-  genblk8[0].sum_comp/U1/X (SAEDRVT14_EO2_1)              0.04       0.14 f
-  genblk8[0].sum_comp/sum (post_process_0)                0.00       0.14 f
-  U24/X (SAEDRVT14_AO22_0P5)                              0.06       0.20 f
-  Sum_reg[0]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  Sum_reg[4]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[4]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U29/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[4]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
   data arrival time                                                  0.20
 
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
   clock uncertainty                                       0.15       0.15
-  Sum_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  Sum_reg[4]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[3]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U28/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[3]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[2]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U27/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[2]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: Sum_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sum_reg[1]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[1]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  U26/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  Sum_reg[1]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  data arrival time                                                  0.20
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  Sum_reg[1]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
   library hold time                                       0.00       0.15
   data required time                                                 0.15
   --------------------------------------------------------------------------
@@ -163,7 +256,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[30]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[30]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U14/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U15/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[30]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -197,7 +290,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[29]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[29]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U13/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U14/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[29]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -231,7 +324,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[28]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[28]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U12/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U13/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[28]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -265,7 +358,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[27]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[27]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U11/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U12/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[27]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -299,7 +392,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[26]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[26]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U10/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U11/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[26]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -333,7 +426,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[25]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[25]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U9/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  U10/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[25]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -367,7 +460,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[24]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[24]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U8/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  U9/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
   Sum_reg[24]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -401,7 +494,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[23]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[23]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U7/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  U8/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
   Sum_reg[23]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -435,7 +528,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[22]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[22]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U6/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  U7/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
   Sum_reg[22]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -469,7 +562,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[21]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[21]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U5/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  U6/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
   Sum_reg[21]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -503,7 +596,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[20]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[20]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U4/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  U5/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
   Sum_reg[20]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -537,7 +630,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[19]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[19]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U3/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
+  U4/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
   Sum_reg[19]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -571,7 +664,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[18]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[18]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U42/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U3/X (SAEDRVT14_AO22_0P5)                               0.08       0.20 f
   Sum_reg[18]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -605,7 +698,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[17]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[17]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U41/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U42/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[17]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -639,7 +732,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[16]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[16]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U40/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U41/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[16]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -673,7 +766,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[15]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[15]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U39/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U40/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[15]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -707,7 +800,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[14]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[14]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U38/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U39/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[14]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -741,7 +834,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[13]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[13]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U37/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U38/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[13]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -775,7 +868,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[12]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[12]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U36/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U37/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[12]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -809,7 +902,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[11]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[11]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U35/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U36/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[11]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -843,7 +936,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[10]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[10]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U34/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U35/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[10]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -875,7 +968,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[9]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
   Sum_reg[9]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
-  U33/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U34/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[9]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -907,7 +1000,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[8]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
   Sum_reg[8]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
-  U32/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U33/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[8]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -939,7 +1032,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[7]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
   Sum_reg[7]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
-  U31/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U32/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[7]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -971,7 +1064,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[6]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
   Sum_reg[6]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
-  U30/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U31/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[6]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -1003,7 +1096,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[5]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
   Sum_reg[5]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
-  U29/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U30/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Sum_reg[5]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -1020,8 +1113,8 @@ Wire Load Model Mode: top
   slack (MET)                                                        0.05
 
 
-  Startpoint: Sum_reg[4] (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: Sum_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: Sum_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Sum_reg[0] (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -1033,112 +1126,16 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  Sum_reg[4]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
-  Sum_reg[4]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
-  U28/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
-  Sum_reg[4]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
-  data arrival time                                                  0.20
-
-  clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  clock uncertainty                                       0.15       0.15
-  Sum_reg[4]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
-  library hold time                                       0.00       0.15
-  data required time                                                 0.15
-  --------------------------------------------------------------------------
-  data required time                                                 0.15
-  data arrival time                                                 -0.20
-  --------------------------------------------------------------------------
-  slack (MET)                                                        0.05
-
-
-  Startpoint: Sum_reg[3] (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: Sum_reg[3] (rising edge-triggered flip-flop clocked by clk)
-  Path Group: clk
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  Sum_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
-  Sum_reg[3]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
-  U27/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
-  Sum_reg[3]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
-  data arrival time                                                  0.20
-
-  clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  clock uncertainty                                       0.15       0.15
-  Sum_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
-  library hold time                                       0.00       0.15
-  data required time                                                 0.15
-  --------------------------------------------------------------------------
-  data required time                                                 0.15
-  data arrival time                                                 -0.20
-  --------------------------------------------------------------------------
-  slack (MET)                                                        0.05
-
-
-  Startpoint: Sum_reg[2] (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: Sum_reg[2] (rising edge-triggered flip-flop clocked by clk)
-  Path Group: clk
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  Sum_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
-  Sum_reg[2]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
-  U26/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
-  Sum_reg[2]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
-  data arrival time                                                  0.20
-
-  clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  clock uncertainty                                       0.15       0.15
-  Sum_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
-  library hold time                                       0.00       0.15
-  data required time                                                 0.15
-  --------------------------------------------------------------------------
-  data required time                                                 0.15
-  data arrival time                                                 -0.20
-  --------------------------------------------------------------------------
-  slack (MET)                                                        0.05
-
-
-  Startpoint: Sum_reg[1] (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: Sum_reg[1] (rising edge-triggered flip-flop clocked by clk)
-  Path Group: clk
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  Kogge_Stone_32Bits 8000                  saed14rvt_base_ss0p72v125c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  Sum_reg[1]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
-  Sum_reg[1]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
+  Sum_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  Sum_reg[0]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.12       0.12 f
   U25/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
-  Sum_reg[1]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
+  Sum_reg[0]/D (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.20 f
   data arrival time                                                  0.20
 
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
   clock uncertainty                                       0.15       0.15
-  Sum_reg[1]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
+  Sum_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.15 r
   library hold time                                       0.00       0.15
   data required time                                                 0.15
   --------------------------------------------------------------------------
@@ -1163,7 +1160,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Cout_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                   0.00       0.00 r
   Cout_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                    0.12       0.12 f
-  U23/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
+  U18/X (SAEDRVT14_AO22_0P5)                              0.08       0.20 f
   Cout_reg/D (SAEDRVT14_FDPRBQ_V2_0P5)                    0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -2240,8 +2237,8 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   Sum_reg[31]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                0.00       0.00 r
   Sum_reg[31]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                 0.12       0.12 f
-  U16/X (SAEDRVT14_ND2_CDC_0P5)                           0.07       0.19 r
-  U15/X (SAEDRVT14_OAI21_0P5)                             0.06       0.25 f
+  U17/X (SAEDRVT14_ND2_CDC_0P5)                           0.07       0.19 r
+  U16/X (SAEDRVT14_OAI21_0P5)                             0.06       0.25 f
   Sum_reg[31]/D (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.25 f
   data arrival time                                                  0.25
 
