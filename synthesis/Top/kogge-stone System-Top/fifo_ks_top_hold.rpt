@@ -6,7 +6,7 @@ Report : timing
         -max_paths 200
 Design : fifo_ks_top
 Version: O-2018.06-SP5
-Date   : Thu May 14 00:14:52 2026
+Date   : Thu May 14 11:32:14 2026
 ****************************************
 
 Operating Conditions: ff0p88vm40c   Library: saed14rvt_base_ff0p88vm40c
@@ -29,7 +29,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[30]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[30]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U73/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U71/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[30]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -63,7 +63,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[29]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[29]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U72/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U70/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[29]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -97,7 +97,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[28]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[28]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U71/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U69/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[28]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -131,7 +131,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[27]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[27]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U70/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U68/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[27]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -165,7 +165,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[26]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[26]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U69/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U67/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[26]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -199,7 +199,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[25]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[25]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U88/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U86/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[25]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -233,7 +233,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[24]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[24]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U68/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U66/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[24]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -267,7 +267,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[23]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[23]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U67/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U65/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[23]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -301,7 +301,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[22]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[22]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U66/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U64/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[22]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -335,7 +335,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[21]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[21]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U87/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U85/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[21]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -369,7 +369,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[20]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[20]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U65/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U63/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[20]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -403,7 +403,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[19]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[19]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U86/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U84/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[19]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -437,7 +437,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[18]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[18]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U85/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U83/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[18]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -471,7 +471,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[17]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[17]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U84/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U82/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[17]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -505,7 +505,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[16]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[16]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U64/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U62/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[16]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -539,7 +539,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[15]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[15]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U63/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U61/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[15]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -573,7 +573,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[14]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[14]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U62/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U60/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[14]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -607,7 +607,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[13]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[13]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U83/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U81/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[13]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -641,7 +641,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[12]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[12]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U61/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U59/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[12]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -675,7 +675,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[11]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[11]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U82/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U80/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[11]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -709,7 +709,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[10]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[10]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U60/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U58/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[10]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -743,7 +743,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[9]/CK (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.00 r
   kogge_stone/Sum_reg[9]/Q (SAEDRVT14_FDPRBQ_V2_1)        0.10       0.10 f
-  kogge_stone/U81/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U79/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[9]/D (SAEDRVT14_FDPRBQ_V2_1)        0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -777,7 +777,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[8]/CK (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.00 r
   kogge_stone/Sum_reg[8]/Q (SAEDRVT14_FDPRBQ_V2_1)        0.10       0.10 f
-  kogge_stone/U59/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U57/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[8]/D (SAEDRVT14_FDPRBQ_V2_1)        0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -811,7 +811,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[7]/CK (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.00 r
   kogge_stone/Sum_reg[7]/Q (SAEDRVT14_FDPRBQ_V2_1)        0.10       0.10 f
-  kogge_stone/U58/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U56/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[7]/D (SAEDRVT14_FDPRBQ_V2_1)        0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -845,7 +845,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[6]/CK (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.00 r
   kogge_stone/Sum_reg[6]/Q (SAEDRVT14_FDPRBQ_V2_1)        0.10       0.10 f
-  kogge_stone/U57/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U55/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[6]/D (SAEDRVT14_FDPRBQ_V2_1)        0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -879,7 +879,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[5]/CK (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.00 r
   kogge_stone/Sum_reg[5]/Q (SAEDRVT14_FDPRBQ_V2_1)        0.10       0.10 f
-  kogge_stone/U80/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U78/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[5]/D (SAEDRVT14_FDPRBQ_V2_1)        0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -913,7 +913,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[4]/CK (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.00 r
   kogge_stone/Sum_reg[4]/Q (SAEDRVT14_FDPRBQ_V2_1)        0.10       0.10 f
-  kogge_stone/U56/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U54/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[4]/D (SAEDRVT14_FDPRBQ_V2_1)        0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -947,7 +947,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.00 r
   kogge_stone/Sum_reg[3]/Q (SAEDRVT14_FDPRBQ_V2_1)        0.10       0.10 f
-  kogge_stone/U79/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U77/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[3]/D (SAEDRVT14_FDPRBQ_V2_1)        0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -981,7 +981,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.00 r
   kogge_stone/Sum_reg[2]/Q (SAEDRVT14_FDPRBQ_V2_1)        0.10       0.10 f
-  kogge_stone/U78/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U76/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[2]/D (SAEDRVT14_FDPRBQ_V2_1)        0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -1015,7 +1015,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[1]/CK (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.00 r
   kogge_stone/Sum_reg[1]/Q (SAEDRVT14_FDPRBQ_V2_1)        0.10       0.10 f
-  kogge_stone/U77/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U75/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[1]/D (SAEDRVT14_FDPRBQ_V2_1)        0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -1049,7 +1049,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.00 r
   kogge_stone/Sum_reg[0]/Q (SAEDRVT14_FDPRBQ_V2_1)        0.10       0.10 f
-  kogge_stone/U76/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
+  kogge_stone/U74/X (SAEDRVT14_AO22_0P5)                  0.07       0.16 f
   kogge_stone/Sum_reg[0]/D (SAEDRVT14_FDPRBQ_V2_1)        0.00       0.16 f
   data arrival time                                                  0.16
 
@@ -1261,41 +1261,6 @@ Wire Load Model Mode: top
   slack (MET)                                                        0.01
 
 
-  Startpoint: kogge_stone/Cout_reg
-              (rising edge-triggered flip-flop clocked by rclk)
-  Endpoint: kogge_stone/Cout_reg
-            (rising edge-triggered flip-flop clocked by rclk)
-  Path Group: rclk
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  fifo_ks_top        8000                  saed14rvt_base_ss0p72v125c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock rclk (rise edge)                                  0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  kogge_stone/Cout_reg/CK (SAEDRVT14_FDPRBQ_V2_1)         0.00       0.00 r
-  kogge_stone/Cout_reg/Q (SAEDRVT14_FDPRBQ_V2_1)          0.08       0.08 f
-  kogge_stone/U4/X (SAEDRVT14_AO22_1)                     0.06       0.14 f
-  kogge_stone/U3/X (SAEDRVT14_BUF_1)                      0.04       0.17 f
-  kogge_stone/Cout_reg/D (SAEDRVT14_FDPRBQ_V2_1)          0.00       0.17 f
-  data arrival time                                                  0.17
-
-  clock rclk (rise edge)                                  0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  clock uncertainty                                       0.15       0.15
-  kogge_stone/Cout_reg/CK (SAEDRVT14_FDPRBQ_V2_1)         0.00       0.15 r
-  library hold time                                       0.01       0.16
-  data required time                                                 0.16
-  --------------------------------------------------------------------------
-  data required time                                                 0.16
-  data arrival time                                                 -0.17
-  --------------------------------------------------------------------------
-  slack (MET)                                                        0.02
-
-
   Startpoint: kogge_stone/valid_out_reg
               (rising edge-triggered flip-flop clocked by rclk)
   Endpoint: valid_out (output port clocked by rclk)
@@ -1346,8 +1311,8 @@ Wire Load Model Mode: top
   input external delay                                    0.10       0.10 r
   A[31] (in)                                              0.00       0.10 r
   kogge_stone/A[31] (Kogge_Stone_32Bits)                  0.00       0.10 r
-  kogge_stone/U54/X (SAEDRVT14_OA33_1)                    0.04       0.14 r
-  kogge_stone/U52/X (SAEDRVT14_OAI21_0P5)                 0.06       0.20 f
+  kogge_stone/U52/X (SAEDRVT14_OA33_1)                    0.04       0.14 r
+  kogge_stone/U50/X (SAEDRVT14_OAI21_0P5)                 0.06       0.20 f
   kogge_stone/overflow_reg/D (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -1381,8 +1346,8 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   kogge_stone/Sum_reg[31]/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00       0.00 r
   kogge_stone/Sum_reg[31]/Q (SAEDRVT14_FDPRBQ_V2_1)       0.10       0.10 f
-  kogge_stone/U75/X (SAEDRVT14_ND2_CDC_1)                 0.05       0.15 r
-  kogge_stone/U74/X (SAEDRVT14_OAI21_0P5)                 0.05       0.20 f
+  kogge_stone/U73/X (SAEDRVT14_ND2_CDC_1)                 0.05       0.15 r
+  kogge_stone/U72/X (SAEDRVT14_OAI21_0P5)                 0.05       0.20 f
   kogge_stone/Sum_reg[31]/D (SAEDRVT14_FDPRBQ_V2_1)       0.00       0.20 f
   data arrival time                                                  0.20
 
@@ -2738,45 +2703,6 @@ Wire Load Model Mode: top
   slack (MET)                                                        0.17
 
 
-  Startpoint: valid_in_reg
-              (rising edge-triggered flip-flop clocked by rclk)
-  Endpoint: kogge_stone/valid_out_reg
-            (rising edge-triggered flip-flop clocked by rclk)
-  Path Group: rclk
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  fifo_ks_top        8000                  saed14rvt_base_ss0p72v125c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock rclk (rise edge)                                  0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  valid_in_reg/CK (SAEDRVT14_FDPRBQ_V2_1)                 0.00       0.00 r
-  valid_in_reg/Q (SAEDRVT14_FDPRBQ_V2_1)                  0.08       0.08 f
-  kogge_stone/valid_in (Kogge_Stone_32Bits)               0.00       0.08 f
-  kogge_stone/U90/X (SAEDRVT14_BUF_S_1)                   0.05       0.13 f
-  kogge_stone/U45/X (SAEDRVT14_BUF_S_1)                   0.08       0.21 f
-  kogge_stone/U37/X (SAEDRVT14_BUF_S_1)                   0.06       0.27 f
-  kogge_stone/U27/X (SAEDRVT14_BUF_S_1)                   0.06       0.33 f
-  kogge_stone/valid_out_reg/D (SAEDRVT14_FDPRBQ_V2_1)     0.00       0.33 f
-  data arrival time                                                  0.33
-
-  clock rclk (rise edge)                                  0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  clock uncertainty                                       0.15       0.15
-  kogge_stone/valid_out_reg/CK (SAEDRVT14_FDPRBQ_V2_1)
-                                                          0.00       0.15 r
-  library hold time                                       0.00       0.15
-  data required time                                                 0.15
-  --------------------------------------------------------------------------
-  data required time                                                 0.15
-  data arrival time                                                 -0.33
-  --------------------------------------------------------------------------
-  slack (MET)                                                        0.18
-
-
   Startpoint: async_fifo/u_read_ptr/rptr_reg[1]
               (rising edge-triggered flip-flop clocked by rclk)
   Endpoint: async_fifo/u_read_ptr/rptr_reg[1]
@@ -2813,6 +2739,46 @@ Wire Load Model Mode: top
   data arrival time                                                 -0.36
   --------------------------------------------------------------------------
   slack (MET)                                                        0.21
+
+
+  Startpoint: valid_in_reg
+              (rising edge-triggered flip-flop clocked by rclk)
+  Endpoint: kogge_stone/valid_out_reg
+            (rising edge-triggered flip-flop clocked by rclk)
+  Path Group: rclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fifo_ks_top        8000                  saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock rclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  valid_in_reg/CK (SAEDRVT14_FDPRBQ_V2_1)                 0.00       0.00 r
+  valid_in_reg/Q (SAEDRVT14_FDPRBQ_V2_1)                  0.08       0.08 f
+  kogge_stone/valid_in (Kogge_Stone_32Bits)               0.00       0.08 f
+  kogge_stone/U88/X (SAEDRVT14_BUF_S_1)                   0.07       0.15 f
+  kogge_stone/U44/X (SAEDRVT14_BUF_S_1)                   0.11       0.26 f
+  kogge_stone/U43/X (SAEDRVT14_BUF_S_1)                   0.07       0.32 f
+  kogge_stone/U34/X (SAEDRVT14_BUF_S_1)                   0.06       0.38 f
+  kogge_stone/U24/X (SAEDRVT14_BUF_S_1)                   0.06       0.44 f
+  kogge_stone/valid_out_reg/D (SAEDRVT14_FDPRBQ_V2_1)     0.00       0.44 f
+  data arrival time                                                  0.44
+
+  clock rclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  kogge_stone/valid_out_reg/CK (SAEDRVT14_FDPRBQ_V2_1)
+                                                          0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.29
 
 
   Startpoint: async_fifo/u_read_ptr/rptr_reg[1]

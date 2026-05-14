@@ -94,11 +94,6 @@ set_false_path -from [get_ports rst_n]
 #
 set_output_delay 0.1 -clock clk [get_ports {Sum[*] overflow valid_out}]
 
-if { $ADDER eq "KS" } {
-    # Kogge-Stone exposes Cout as a registered output — BK does not have this port
-    set_output_delay 0.1 -clock clk [get_ports Cout]
-}
-
 ############################# HOLD FIX ###########################################################
 
 set_fix_hold [all_clocks]
