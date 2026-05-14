@@ -16,7 +16,6 @@ logic Cin;
 logic [31:0] Sum;
 logic overflow;
 logic valid_out;
-logic Cout;
 
 logic [31:0] Expected_sum;
 logic Expected_Cout;

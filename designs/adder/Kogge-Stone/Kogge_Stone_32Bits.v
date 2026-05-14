@@ -6,7 +6,6 @@ module Kogge_Stone_32Bits (
     input wire [31:0] B,
     input wire Cin,
     output reg [31:0] Sum,
-    output reg Cout,
     output reg overflow,
     output reg valid_out
 );
@@ -15,9 +14,7 @@ wire [31:0] g, p;       // Generate and Propagate signals
 wire [32:0] C;          // Carry signals {C[0]=Cin … C[32]=Cout}
 
 wire [31:0] sum_comb;
-wire cout_comb;
 wire overflow_comb;
-wire valid_out_comb;
 
 // Pre-Processing (Generate and Propagate computation)
 genvar i;
@@ -177,22 +174,19 @@ generate
     end
 endgenerate
 
-// Final carry-out and overflow detection
-assign cout_comb = C[32];
+// Overflow detection for signed addition
 assign overflow_comb = (A[31] & B[31] & ~sum_comb[31]) | (~A[31] & ~B[31] & sum_comb[31]);
 
-// Registering the sum output
+// Registering the outputs
 always @(posedge clk or negedge rst_n) begin
     if (!rst_n) begin
         Sum <= 32'b0;
         overflow <= 1'b0;
         valid_out <= 1'b0;
-        Cout <= 1'b0;
     end else if (valid_in) begin
         Sum <= sum_comb;
         overflow <= overflow_comb;
         valid_out <= valid_in;
-        Cout <= cout_comb;
     end
     else begin
         valid_out <= 1'b0;
