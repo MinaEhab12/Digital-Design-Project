@@ -12,6 +12,7 @@ module Kogge_Stone_32Bits (
 
 wire [31:0] g, p;       // Generate and Propagate signals
 wire [32:0] C;          // Carry signals {C[0]=Cin … C[32]=Cout}
+                        // Cout is not a output as we are intersted in signed addition
 
 wire [31:0] sum_comb;
 wire overflow_comb;
